@@ -8,12 +8,20 @@ interface NavConfig{
 export const navConfig: NavConfig = {
     main: [
         {
+            title: 'Home',
+            href: '/',
+        },
+        {
             title: 'Services',
             href: '/services',
         },
         {
             title: 'Testimonials',
             href: '/testimonials',
+        },
+        {
+            title: 'Team',
+            href: '/team',    
         },
         {
             title: 'Contact us',

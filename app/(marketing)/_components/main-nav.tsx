@@ -10,10 +10,10 @@ const MainNav = () => {
     const pathname = usePathname();
 
     return (
-        <nav className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-2">
+        <nav className="md:ml-auto justify-end  md:justify-between w-full flex items-center gap-x-2">
             <Button asChild variant="ghost" size="sm"
                 className={cn(
-                    "rounded-3xl transition-transform hover:text-foreground/80 hover:translate-y-[-1px] hover:scale-[1.01] hover:border-b-2 hover:border-primary",
+                    "hidden md:flex rounded-3xl transition-transform hover:text-foreground/80 hover:translate-y-[-1px] hover:scale-[1.01] hover:border-b-2 hover:border-primary",
                     pathname === "/services" ? "text-foreground" : "text-foreground/60"
                 )}
             >
@@ -21,7 +21,7 @@ const MainNav = () => {
             </Button>
             <Button asChild variant="ghost" size="sm"
                 className={cn(
-                    "rounded-3xl transition-transform hover:text-foreground/80 hover:translate-y-[-1px] hover:scale-[1.01] hover:border-b-2 hover:border-primary",
+                    "hidden md:flex rounded-3xl transition-transform hover:text-foreground/80 hover:translate-y-[-1px] hover:scale-[1.01] hover:border-b-2 hover:border-primary",
                     pathname === "/testimonials" ? "text-foreground" : "text-foreground/60"
                 )}
             >
@@ -29,7 +29,7 @@ const MainNav = () => {
             </Button>
             <Button asChild variant="ghost" size="sm" 
                 className={cn(
-                    "rounded-3xl transition-transform hover:text-foreground/80 hover:translate-y-[-1px] hover:scale-[1.01] hover:border-b-2 hover:border-primary",
+                    "hidden md:flex rounded-3xl transition-transform hover:text-foreground/80 hover:translate-y-[-1px] hover:scale-[1.01] hover:border-b-2 hover:border-primary",
                     pathname === "/team" ? "text-foreground" : "text-foreground/60"
                 )}
             >

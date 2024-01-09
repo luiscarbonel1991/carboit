@@ -26,7 +26,7 @@ export const MobileNav = () => {
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
+                        className="h-5 w-5 transform rotate-180"
                     >
                         <path
                             d="M3 5H11"
@@ -53,7 +53,7 @@ export const MobileNav = () => {
                     <span className="sr-only">Toggle Menu</span>
                 </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-full max-w-[90vw] md:max-w-[400px]">
+            <SheetContent side="right" className="w-full max-w-[90vw] md:max-w-[400px]">
 
                 <MobileLink
                     href="/"
