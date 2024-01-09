@@ -13,7 +13,7 @@ export const getSiteMetadata = () => {
       default: siteConfig.name,
       template: '%s | ' + siteConfig.name,
     },
-    // metadataBase: siteConfig.siteUrl ? new URL(siteConfig.siteUrl) : undefined,
+    metadataBase: siteConfig.siteUrl ? new URL(siteConfig.siteUrl) : undefined,
     description: siteConfig.description,
     keywords: siteConfig.keywords,
     authors: siteConfig.authors,
