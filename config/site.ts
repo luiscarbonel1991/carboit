@@ -3,7 +3,7 @@ import { siteKeywords } from "./site-keywork";
 export const siteConfig = {
     name: 'My Site',
     description: 'My site description',
-    siteUrl: process.env.WEB_SITE_URL!, // Add your own URL
+    siteUrl: process.env.WEB_SITE_URL || '',
     ogImage: `${process.env.WEB_SITE_URL}/og-image.png`, // Add your own image in the /public folder
     socialNetworks: { // Add your own social networks
         facebook: 'https://facebook.com/my-site',
