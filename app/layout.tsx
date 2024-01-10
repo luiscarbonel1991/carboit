@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { cn, getSiteMetadata } from '@/lib/utils'
-import { siteConfig } from '@/config/site'
+import { Toaster } from "@/components/ui/toaster"
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,6 +25,7 @@ export default function RootLayout({
         <div vaul-drawer-wrapper="">
           {children}
         </div>
+        <Toaster />
       </body>
     </html>
   )
