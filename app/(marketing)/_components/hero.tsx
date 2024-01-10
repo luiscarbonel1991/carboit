@@ -42,7 +42,7 @@ export const Hero = () => {
             </aside>
         </main>*/
 
-        <Card className="mx-auto max-w-7xl sm:px-6 md:px-8 py-14 md:m-10 sm:m-1 shadow-md border-t-0">
+        <Card className="mx-auto max-w-7xl py-14 md:m-6 sm:m-1 shadow-md border-t-0 rounded-3xl">
             <CardContent>
                 <div className="grid lg:grid-cols-2 place-items-center">
                     <picture className="py-6 md:order-1 hidden md:block">
@@ -54,7 +54,7 @@ export const Hero = () => {
                             className="rounded-3xl shadow-md"
                         />
                     </picture>
-                    <aside>
+                    <aside className="px-4 md:px-10">
                         <Button variant="secondary" className="mb-2 rounded-tl-2xl rounded-br-2xl"
                                 size="sm">
                             Welcome
