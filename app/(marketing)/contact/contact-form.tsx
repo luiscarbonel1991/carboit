@@ -59,7 +59,7 @@ export const ContactForm = () => {
 
         <>
             <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="mx-auto mt-16 w-4/5 sm:mt-20 space-y-3">
+                <form onSubmit={form.handleSubmit(onSubmit)} className="mx-auto mt-16 w-4/5 sm:mt-16 space-y-3">
                     <h2 className="font-bold tracking-tight sm:text-xl">Work inquires</h2>
                     <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                         <FormField

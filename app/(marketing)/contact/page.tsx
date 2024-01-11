@@ -3,7 +3,7 @@ import {HeadingForm} from "@/app/(marketing)/contact/heading-form";
 
 const ContactPage = () => {
     return (
-        <div className="isolate container grid lg:grid-cols-2 place-items-center pt-32 md:pb-24">
+        <div className="isolate container grid lg:grid-cols-2 place-items-center pt-8 md:pt-12 md:pb-24">
             <div
                 className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
                 aria-hidden="true"
