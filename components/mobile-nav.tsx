@@ -1,21 +1,22 @@
 'use client';
 
-import { useState } from "react";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
-import { Button } from "./ui/button";
-import { siteConfig } from "@/config/site";
-import { Icons } from "@/app/(marketing)/_components/icons";
-import { MobileLink } from "./mobile-link";
-import { Logo } from "@/app/(marketing)/_components/logo";
-import { navConfig } from "@/config/nav-config";
-import { ScrollArea } from "./ui/scroll-area";
+import {useState} from "react";
+import {Sheet, SheetContent, SheetTrigger} from "./ui/sheet";
+import {Button} from "./ui/button";
+import {siteConfig} from "@/config/site";
+import {Icons} from "@/app/(marketing)/_components/icons";
+import {MobileLink} from "./mobile-link";
+import {Logo} from "@/app/(marketing)/_components/logo";
+import {getNavConfig, navConfig} from "@/config/nav-config";
+import {ScrollArea} from "./ui/scroll-area";
 
 export const MobileNav = () => {
 
     const [isOpen, setIsOpen] = useState(false);
+    const {sidebar: sideBarNav} = getNavConfig();
 
     return (
-        <Sheet open={isOpen} onOpenChange={setIsOpen} >
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
                 <Button
                     variant="ghost"
@@ -60,14 +61,14 @@ export const MobileNav = () => {
                     className="flex items-center"
                     onOpenChange={setIsOpen}
                 >
-                    <Icons.logo className="mr-2 h-4 w-4" />
+                    <Icons.logo className="mr-2 h-4 w-4"/>
                     <span className="font-bold">{siteConfig.name}</span>
                 </MobileLink>
 
 
                 <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
                     <div className="flex flex-col space-y-3">
-                        {navConfig.main?.map(
+                        {sideBarNav.map(
                             (item) =>
                                 item.href && (
                                     <MobileLink
@@ -75,7 +76,7 @@ export const MobileNav = () => {
                                         href={item.href}
                                         onOpenChange={setIsOpen}
                                         className="hover:bg-accent hover:text-accent-foreground p-2 rounded-3xl transition-colors w-6/12">
-                                    
+
 
                                         {item.title}
                                     </MobileLink>
