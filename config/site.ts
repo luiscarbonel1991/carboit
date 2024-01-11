@@ -1,8 +1,8 @@
 import { siteKeywords } from "./site-keywork";
 
 export const siteConfig = {
-    name: 'My Site',
-    description: 'My site description',
+    name: 'Carboit',
+    description: 'Free, open-source Next.js template with Shadcn and Tailwind for swift and modern web development.',
     siteUrl: process.env.WEB_SITE_URL || 'http://localhost:3000',
     ogImage: `${process.env.WEB_SITE_URL}/og-image.png`, // Add your own image in the /public folder
     socialNetworks: { // Add your own social networks

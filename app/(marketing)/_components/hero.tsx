@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import {Button} from "@/components/ui/button";
 import SvgBackground from "@/components/svg-background";
@@ -12,15 +11,28 @@ export const Hero = () => {
             <main className="isolate container grid lg:grid-cols-2 place-items-center pt-32 md:pb-24 px-4 md:px-10">
                 <SvgBackground/>
 
-                <picture className="py-6 md:order-1 hidden md:block">
+
+                <div className="py-6 md:order-1 hidden md:block">
+                    {/*
+                    Put your image here and uncomment the code below and remove the code after it
                     <Image
-                        src="/static/images/marketing/hero_v3.png"
+                        src="/static/images/marketing/your-image-here.png"
                         alt="A Developer in front of a computer developing software"
                         height={440}
                         width={440}
                         className="rounded-3xl shadow-md"
-                    />
-                </picture>
+                    />*/}
+                    <div className="relative h-[440px] w-[440px] rounded-3xl shadow-md overflow-hidden">
+                        <div className="flex h-full">
+                            <div className="w-1/2 bg-black"></div>
+                            <div className="w-1/2 bg-gray-500"></div>
+                        </div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                            <span className="text-xl font-bold text-white">Your image here</span>
+                        </div>
+                    </div>
+                </div>
+
                 <aside>
                     <Button variant="secondary" className="mb-2 rounded-tl-2xl rounded-br-2xl"
                             size="sm">

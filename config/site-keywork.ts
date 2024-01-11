@@ -1,6 +1,8 @@
 
 
 export const siteKeywords = [
+    'Carboit',
+    'DevLach',
     'Digital Marketing',
     'SEO',
     'Social Media',
@@ -8,4 +10,10 @@ export const siteKeywords = [
     'Web Development',
     'Content Marketing',
     'Email Marketing',
+    'shadcn',
+    'tailwindcss',
+    'nextjs',
+    'typescript',
+    'reactjs',
+    'javascript',
 ] as string[];

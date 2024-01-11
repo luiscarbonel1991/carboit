@@ -1,5 +1,5 @@
 import {ContactForm} from "@/app/(marketing)/contact/contact-form";
-import {HeadingForm} from "@/app/(marketing)/contact/heading-form";
+import {HeadingForm} from "@/components/heading-form";
 import SvgBackground from "@/components/svg-background";
 
 const ContactPage = () => {
