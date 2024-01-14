@@ -33,7 +33,7 @@ const MainNav = () => {
             }
 
             <Button asChild variant="default" size="sm"
-                    className="rounded-3xl shadow-2xl transition-transform hover:translate-y-[-1px] hover:scale-[1.01] hover:border-b-2 hover:border-primary">
+                    className="rounded-3xl shadow-2xl transition-transform hover:translate-y-[-1px] hover:scale-[1.01] hover:border-b-2 hover:border-primary bg-gradient-to-r from-blue-400 to-blue-600">
                 <Link href={"/contact"}>Contact us</Link>
             </Button>
 

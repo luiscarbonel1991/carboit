@@ -2,6 +2,7 @@ import {Mail} from "lucide-react";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
 import {Icons} from "@/components/icons";
+import SocialIcon from "@/components/social-icons";
 
 
 export const HeadingForm = () => {
@@ -18,15 +19,11 @@ export const HeadingForm = () => {
 
             <div className="mt-6 flex sm:flex-row gap-1">
 
-                <Button asChild variant="default" className="rounded-full hover:bg-green-600" size="icon">
-                    <Link href="/" className="flex items-center">
-                        <Icons.whatsapp className="h-14 w-14"/>
-                    </Link>
+                <Button  variant="outline" className="rounded-full hover:bg-green-500" size="icon">
+                    <SocialIcon kind="whatsapp" size={6} href={"/"}/>
                 </Button>
-                <Button asChild variant="default" className="rounded-full hover:bg-sky-500" size="icon">
-                    <Link href="/" className="flex items-center">
-                        <Icons.telegram className="h-8 w-8"/>
-                    </Link>
+                <Button  variant="outline" className="rounded-full hover:bg-sky-500" size="icon">
+                    <SocialIcon kind="telegram" size={6} href={"/"}/>
                 </Button>
             </div>
 
