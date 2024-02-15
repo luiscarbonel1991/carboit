@@ -1,7 +1,5 @@
 import {Mail} from "lucide-react";
 import {Button} from "@/components/ui/button";
-import Link from "next/link";
-import {Icons} from "@/components/icons";
 import SocialIcon from "@/components/social-icons";
 
 

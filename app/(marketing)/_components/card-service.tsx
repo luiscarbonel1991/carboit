@@ -16,7 +16,7 @@ const CardService = ({
                          description,
                          headerContent,
                          cardClassName,
-    link
+                         link
                      }: CardServiceProps) => {
     return (
         <Card className={cardClassName}>
@@ -33,16 +33,13 @@ const CardService = ({
                 {
                     link && (
                         <Button asChild variant="outline" size="sm" className="rounded-3xl">
-                            <Link href={link}>
+                            <Link href={link}
+                                  aria-label={`Learn more about ${title}`}
+                            >
                                 Learn more →
                             </Link>
                         </Button>
-                    ) || (
-                        <Button variant="outline" size="sm" className="rounded-3xl">
-                            Learn more →
-                        </Button>
                     )
-
                 }
             </CardFooter>
         </Card>

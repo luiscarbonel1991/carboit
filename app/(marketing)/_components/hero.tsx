@@ -17,8 +17,8 @@ export const Hero = () => {
 
 
                     <Image
-                        src="/static/images/marketing/hero_v6.png"
-                        alt="A Developer in front of a computer developing software"
+                        src="/static/images/marketing/light_hero_building_websites.svg"
+                        alt="Pleople working on a website"
                         height={440}
                         width={440}
                         className="rounded-3xl shadow-md"
@@ -40,7 +40,8 @@ export const Hero = () => {
                         Welcome
                     </Button>
                     <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">
-                        Let’s make your product a {` `} <span className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">success</span>
+                        Let’s make your product a {` `} <span
+                        className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">success</span>
                     </h1>
                     <p className="mt-6 text-xl text-gray-600 dark:text-gray-400">
                         We are a software development studio that helps startups and enterprises build

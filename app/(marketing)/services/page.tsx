@@ -1,9 +1,9 @@
-import {HeadingContact} from "@/app/(marketing)/_components/heading-contact";
+import {HeadingContactClean} from "@/app/(marketing)/_components/heading-contact-clean";
 
 
 const ServicesPage = () => {
     return (
-        <HeadingContact/>
+        <HeadingContactClean/>
     )
 }
 

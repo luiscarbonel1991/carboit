@@ -5,15 +5,7 @@ import {useForm} from "react-hook-form"
 import * as z from "zod"
 
 import {Button} from "@/components/ui/button"
-import {
-    Form,
-    FormControl,
-    FormDescription,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-} from "@/components/ui/form"
+import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage,} from "@/components/ui/form"
 import {Input} from "@/components/ui/input"
 import {Textarea} from "@/components/ui/textarea";
 import {Checkbox} from "@/components/ui/checkbox";
@@ -48,7 +40,7 @@ export const ContactForm = () => {
         toast({
             title: "Thanks for your message!",
             description: (
-            <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
+                <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
                  <code className="text-white">{JSON.stringify(data, null, 2)}</code>
             </pre>
             ),

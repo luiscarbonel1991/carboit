@@ -1,0 +1,115 @@
+"use client";
+
+import React from "react"
+import Link from "next/link";
+import {FacebookIcon, GithubIcon, InstagramIcon, LinkedinIcon, TwitterIcon} from "lucide-react";
+import {Button} from "@/components/ui/button";
+import Image from "next/image";
+
+const team = [
+    {
+        name: "Luis Carbonel",
+        profile:
+            "https://avatars.githubusercontent.com/u/95326684?v=4",
+        position: "Founder & CEO",
+        socialMediaLinks: {
+            facebook: "",
+            twitter: "",
+            github: "https://github.com/luiscarbonel1991",
+            instagram: "",
+            linkedin: "https://www.linkedin.com/in/luiscarbonel91/"
+        }
+    },
+]
+
+const TeamMember = ({name, role, imageUrl, socialMediaLinks}:
+                        {
+                            name: string;
+                            role: string;
+                            imageUrl: string;
+                            socialMediaLinks: {
+                                facebook: string;
+                                twitter: string;
+                                github: string;
+                                instagram: string;
+                                linkedin: string;
+                            };
+
+                        }) => {
+    return (
+        <div className="text-center text-gray-500 dark:text-gray-400">
+            <Image
+                src={imageUrl}
+                alt={`${name} Avatar`}
+                width={144} height={144}
+                className="mx-auto mb-4 rounded-full"
+            />
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <Link href="#">{name}</Link>
+            </h3>
+            <p>{role}</p>
+            <ul className="flex justify-center mt-4 space-x-4">
+                {
+                    Object.entries(socialMediaLinks).map(([key, value]) => {
+                            if (value) {
+                                return (
+                                    <li key={key}>
+                                        <Link href={value}
+                                              className="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                            <Button variant="ghost" size="icon" aria-label={key}>
+                                                {
+                                                    key === "facebook" ? <FacebookIcon className="w-6 h-6 text-blue-500"/> :
+                                                        key === "twitter" ?
+                                                            <TwitterIcon className="w-6 h-6 text-blue-400"/> :
+                                                            key === "github" ?
+                                                                <GithubIcon className="w-6 h-6 text-gray-800"/> :
+                                                                key === "instagram" ?
+                                                                    <InstagramIcon className="w-6 h-6 text-pink-500"/> :
+                                                                    key === "linkedin" ? <LinkedinIcon
+                                                                        className="w-6 h-6 text-blue-500"/> : null
+                                                }
+                                            </Button>
+                                        </Link>
+                                    </li>
+                                )
+                            }
+                        }
+                    )
+                }
+            </ul>
+        </div>
+    );
+};
+
+
+const Team = () => {
+    return (
+        <section className="bg-white dark:bg-gray-900">
+            <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+                <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our
+                        team</h2>
+                    <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                        Our passionate team collaborates seamlessly to create solutions.
+                    </p>
+                </div>
+                {/*<div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-start items-center">*/}
+                <div className="flex flex-col md:flex-row gap-8 justify-center flex-wrap">
+
+                    {team.map((member, index) => (
+                        <TeamMember
+                            key={index}
+                            name={member.name}
+                            role={member.position}
+                            imageUrl={member.profile}
+                            socialMediaLinks={member.socialMediaLinks}
+                        />
+                    ))}
+
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default Team
