@@ -8,7 +8,7 @@ export const Logo = () => {
         <Link href="/" className="mr-6 flex items-center space-x-2 w-full">
             <Icons.logo className="h-6 w-6"/>
             <span className="font-bold sm:inline-block">
-                {siteConfig.name}
+                {siteConfig.name.toUpperCase()}
             </span>
         </Link>
     );

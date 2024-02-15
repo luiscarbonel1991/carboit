@@ -18,7 +18,7 @@ export const getSiteMetadata = () => {
     keywords: siteConfig.keywords,
     authors: siteConfig.authors,
     creator: siteConfig.authors[0].name,
-    ogImage: siteConfig.ogImage, 
+    ogImage: siteConfig.ogImage,
     openGraph: {
       type: 'website',
       locale: 'en_US',

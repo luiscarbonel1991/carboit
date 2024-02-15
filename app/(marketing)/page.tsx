@@ -9,8 +9,8 @@ const MarketingPage = () => {
         <>
             <Hero/>
             <ServicesSection/>
-            <Team/>
             <HeadingContactClean/>
+            <Team/>
         </>
     );
 }

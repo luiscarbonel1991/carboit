@@ -14,6 +14,7 @@ export const navConfig: NavConfig = {
         {
             title: 'Services',
             href: '/services',
+            disabled: true,
         },
         {
             title: 'Testimonials',
@@ -40,6 +41,7 @@ export const navConfig: NavConfig = {
             title: 'Services',
             href: '/services',
             items:[],
+            disabled: true,
         },
         {
             title: 'Testimonials',

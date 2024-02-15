@@ -21,6 +21,7 @@ export const Hero = () => {
                         alt="Pleople working on a website"
                         height={440}
                         width={440}
+                        priority={true}
                         className="rounded-3xl shadow-md"
                     />
                     {/*<div className="relative h-[440px] w-[440px] rounded-3xl shadow-md overflow-hidden">
@@ -35,10 +36,16 @@ export const Hero = () => {
                 </div>
 
                 <aside>
-                    <Button variant="secondary" className="mb-2 rounded-tl-2xl rounded-br-2xl"
-                            size="sm">
-                        Welcome
-                    </Button>
+                    <div className="hidden sm:mb-8 sm:flex sm:justify-start">
+                        <div
+                            className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                            Interested in collaborating?{' '}
+                            <Link href="/contact" className="font-semibold text-indigo-600">
+                                <span className="absolute inset-0" aria-hidden="true"/>
+                                Contact us <span aria-hidden="true">&rarr;</span>
+                            </Link>
+                        </div>
+                    </div>
                     <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">
                         Let’s make your product a {` `} <span
                         className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">success</span>
