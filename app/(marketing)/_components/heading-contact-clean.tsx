@@ -31,7 +31,7 @@ export const HeadingContactClean = () => {
                             </div>
                             <div className="mt-10 border-t border-white/10 pt-10"><h3
                                 className="font-display text-base font-semibold text-white">Follow us</h3>
-                                <ul role="list" className="mt-6 flex flex-col sm:flex-row gap-2">
+                                <ul role="list" className="mt-6 flex sm:flex-row gap-2">
                                     <li>
                                         <Button variant="outline" className="rounded-full hover:bg-green-500"
                                                 size="icon">
