@@ -6,7 +6,7 @@ import {Button} from "@/components/ui/button";
 const services = [
     {
         title: "Web Development",
-        description: "We elevate web development by creating exquisite and functional marketing pages that capture the essence of your brand. Every site is meticulously designed to deliver an immersive experience, beyond the first impression.",
+        description: "We elevate web development by creating exquisite and functional marketing pages that capture the essence of your brand. Every site is meticulously designed to deliver an immersive experience.",
         icon: <Terminal size={48} className="text-pink-500"/>,
         link: undefined
     },
@@ -27,20 +27,7 @@ const services = [
 
 export const ServicesSection = () => {
     return (
-        <section className="container grid grid-cols-1 pt-16 px-4 md:px-10 py-10">
-
-            {/*<div className="flex flex-wrap w-ful justify-center mb-8">
-                <div className="lg:w-1/2 w-full mb-6 lg:mb-0 text-center">
-                    <h2 className="sm:text-5xl text-4xl font-bold mb-4">We help you {` `}
-                        <span
-                            className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">identity</span>,
-                        {` `} explore
-                        and respond to new
-                        opportunities.</h2>
-                    <p className="text-xl text-gray-600 dark:text-gray-400 mb-4">We are a software development studio
-                        that helps startups and enterprises build quality software to achieve growth and scale.</p>
-                </div>
-            </div>*/}
+        <section className="grid grid-cols-1 px-4 md:px-10 py-10">
 
             <div className="flex flex-wrap w-full justify-center mb-8">
                 <div className="lg:w-1/2 w-full mb-6 lg:mb-0 text-center">

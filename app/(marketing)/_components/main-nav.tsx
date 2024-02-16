@@ -5,7 +5,6 @@ import {usePathname} from "next/navigation";
 import {cn} from "@/lib/utils";
 import {Button} from "@/components/ui/button";
 import {getNavConfig} from "@/config/nav-config";
-import {ArrowRight} from "lucide-react";
 
 const MainNav = () => {
 

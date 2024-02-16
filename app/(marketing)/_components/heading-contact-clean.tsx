@@ -11,7 +11,7 @@ export const HeadingContactClean = () => {
     const [ref, visible] = useOnScreen({threshold: 0.1});
 
     return (
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40" ref={ref}>
+        <div className="max-w-7xl px-6 lg:px-8" ref={ref}>
             <div
                 className={`mx-auto max-w-2xl lg:max-w-none transition-opacity duration-700 ${visible ? 'opacity-100' : 'opacity-0'}`}>
                 <div

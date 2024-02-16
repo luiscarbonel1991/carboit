@@ -17,22 +17,13 @@ export const Hero = () => {
 
 
                     <Image
-                        src="/static/images/marketing/light_hero_building_websites.svg"
+                        src="/static/images/marketing/light_hero_building_websites_v1.svg"
                         alt="Pleople working on a website"
                         height={440}
                         width={440}
                         priority={true}
                         className="rounded-3xl shadow-md"
                     />
-                    {/*<div className="relative h-[440px] w-[440px] rounded-3xl shadow-md overflow-hidden">
-                        <div className="flex h-full">
-                            <div className="w-1/2 bg-black"></div>
-                            <div className="w-1/2 bg-gray-500"></div>
-                        </div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <span className="text-xl font-bold text-white">Your image here</span>
-                        </div>
-                    </div>*/}
                 </div>
 
                 <aside>

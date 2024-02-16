@@ -25,7 +25,7 @@ const CardService = ({
             </CardHeader>
             <CardContent className="space-y-3">
                 <CardTitle>{title}</CardTitle>
-                <CardDescription>
+                <CardDescription className={"text-lg"}>
                     {description}
                 </CardDescription>
             </CardContent>
