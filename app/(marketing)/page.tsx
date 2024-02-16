@@ -10,7 +10,7 @@ const MarketingPage = () => {
     return (
         <>
 
-            <MaxWithWrapper className="grid grid-cols-1 gap-4 md:gap-8">
+            <MaxWithWrapper className="grid grid-cols-1 space-y-32">
                 <Hero/>
                 <ServicesSection/>
                 <StudyCase/>

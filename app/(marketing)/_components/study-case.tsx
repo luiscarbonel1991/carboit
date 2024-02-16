@@ -4,11 +4,28 @@ import {Button} from "@/components/ui/button";
 import Link from "next/link";
 
 
+const caseStudies = [
+    {
+        title: "DevLach Blog",
+        description: "DevLach is a blog designed to be a showcase of the latest technologies and trends in the world of web development. It is built using the latest technologies such as Next.js, TailwindCSS.",
+        image: "/static/images/marketing/study-case-devlach.png",
+        url: "https://devlach.com",
+        type: "Website"
+    },
+    {
+        title: "TaxiPremium24hours",
+        description: "TaxiPremium24hours showcases a 24-hour taxi service via a user-friendly website built with WordPress CMS, featuring responsive design and SEO optimization for enhanced visibility and performance.",
+        image: "/static/images/marketing/study-case-taxipremium24hours.png",
+        url: "https://taxipremium24hours.com",
+        type: "Website"
+    }
+]
+
 export const StudyCase = () => {
     return (
 
-        <section className="flex flex-col items-center">
-            <div className="flex flex-col max-w-2xl justify-center text-center">
+        <section className="flex flex-col items-center space-y-8 md:space-y-12">
+            <div className="flex flex-col justify-center text-center">
                 <h2>
                     <span
                         className="block font-display tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-5xl text-neutral-950">Selected Cases</span>
@@ -23,33 +40,40 @@ export const StudyCase = () => {
                 </div>
             </div>
 
-            <ul className="flex flex-col md:flex-row gap-6 rounded-3xl pl-4 pr-4 pt-6 hover:rounded-3xl dark:divide-gray-700">
-                <li className="rounded-3xl">
-                    <article className="flex flex-col rounded-md p-6 max-w-lg">
-                        <Card className="rounded-3xl">
-                            <Image src="/static/images/marketing/study-case-devlach.png"
-                                   alt="Pleople working on a website" height={440} width={440} priority={true}
-                                   className="rounded-3xl shadow-md w-full"/>
-                            <CardHeader>
-                                <CardTitle className="text-2xl">DevLach Blog</CardTitle>
-                                <CardDescription className="text-lg text-justify">
-                                    DevLach is a blog designed to be a showcase of the latest technologies and
-                                    trends in the world of web development. It is built using the latest
-                                    technologies such as Next.js, TailwindCSS.
-                                </CardDescription>
-                            </CardHeader>
-                            <CardFooter>
-                                <Link href="https://devlach.com"
-                                      aria-label="Visit DevLach Blog"
-                                      target="_blank"
-                                >
-                                    <Button className={"rounded-3xl"} variant={"secondary"}>Website</Button>
-                                </Link>
-                            </CardFooter>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
 
-                        </Card>
-                    </article>
-                </li>
+                {
+                    caseStudies.map((caseStudy, index) => (
+                        <li key={index}
+                            className="rounded-3xl max-w-full md:max-w-lg shadow-md hover:shadow-2xl transition duration-300">
+                            <article className="flex flex-col rounded-md">
+                                <Card className="rounded-3xl">
+                                    <figure className="p-0">
+                                        <Image src={caseStudy.image}
+                                               alt="Principal View of DevLach Blog" height={600} width={600}
+                                               priority={true}
+                                               className="rounded-3xl shadow-md"/>
+                                    </figure>
+                                    <CardHeader>
+                                        <CardTitle className="text-2xl">{caseStudy.title}</CardTitle>
+                                        <CardDescription className="text-lg text-justify">
+                                            {caseStudy.description}
+                                        </CardDescription>
+                                    </CardHeader>
+                                    <CardFooter>
+                                        <Link href={caseStudy.url}
+                                              aria-label={`Visit ${caseStudy.title} website`}
+                                              target="_blank"
+                                        >
+                                            <Button className={"rounded-3xl"}
+                                                    variant={"secondary"}>{caseStudy.type}</Button>
+                                        </Link>
+                                    </CardFooter>
+                                </Card>
+                            </article>
+                        </li>
+                    ))
+                }
             </ul>
         </section>
     )
