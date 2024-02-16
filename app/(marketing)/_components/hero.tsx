@@ -3,13 +3,19 @@ import {Button} from "@/components/ui/button";
 import SvgBackground from "@/components/svg-background";
 import Image from "next/image";
 
+import { Poppins}  from 'next/font/google';
+
+const poppins = Poppins({
+    subsets: ["latin"],
+    weight: ["100", "200", "300", "400", "500", "600"]
+});
 
 export const Hero = () => {
 
     return (
 
         <>
-            <main className="isolate container grid lg:grid-cols-2 place-items-center pt-32 md:pb-24 px-4 md:px-10">
+            <main className={`isolate container grid lg:grid-cols-2 place-items-center pt-32 md:pb-24 px-4 md:px-10 ${poppins.className}`}>
                 <SvgBackground/>
 
 
