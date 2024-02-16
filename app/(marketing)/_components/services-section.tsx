@@ -42,7 +42,7 @@ export const ServicesSection = () => {
                         Partner with us to navigate the digital landscape with ease. Our bespoke software services are
                         tailored to spark innovation and operational excellence.
                     </p>
-                    <Button className={"rounded-2xl"} variant={"default"} size={"lg"}>
+                    <Button className={"rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 scale-105 font-bold"} variant={"default"} size={"lg"}>
                         Let's Build Together &rarr;
                     </Button>
                 </div>
