@@ -17,7 +17,7 @@ export const HeadingContactClean = () => {
                 <div
                     className="-mx-6 bg-gradient-to-r from-slate-800 to-slate-950 px-6 py-20 sm:mx-0 sm:py-32 md:px-12 rounded-3xl"
                     style={{opacity: 1, transform: 'none'}}>
-                    <div className="mx-auto max-w-4xl flex justify-between items-center">
+                    <div className="mx-auto max-w-4xl flex flex-col md:flex-row justify-between items-center">
                         <div className="max-w-xl">
                             <h2
                                 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">Tell
@@ -56,7 +56,7 @@ export const HeadingContactClean = () => {
                             alt="Mobile Development"
                             width={400}
                             height={400}
-                            className="mt-10"
+                            className="mt-10 hidden md:block"
                         />
                     </div>
                 </div>
