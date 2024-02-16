@@ -1,8 +1,8 @@
 import {Button} from "@/components/ui/button";
-import {siteConfig} from "@/config/site"
 import {Icons} from "./icons";
 
 import Link from "next/link";
+import {siteMetadata} from "@/config/site-metadata";
 
 const Footer = () => {
     return (
@@ -11,7 +11,7 @@ const Footer = () => {
                 <Link href="/" className="mr-6 flex items-center space-x-2">
                     <Icons.logo className="h-6 w-6"/>
                     <span className="hidden font-bold sm:inline-block">
-                    {siteConfig.name}
+                    {siteMetadata.applicationName}
                 </span>
                 </Link>
             </div>
