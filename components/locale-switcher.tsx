@@ -4,7 +4,7 @@ import {usePathname, useRouter} from "next/navigation";
 
 import {i18n, Locale} from "@/i18n-config";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import {getDictionary} from "@/lib/dictionary";
 import {Badge} from "@/components/ui/badge";
 import {LuLanguages} from "react-icons/lu";

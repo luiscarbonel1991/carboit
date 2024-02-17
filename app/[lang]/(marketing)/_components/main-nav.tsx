@@ -6,8 +6,8 @@ import {cn} from "@/lib/utils";
 import {Button} from "@/components/ui/button";
 import {getNavConfig} from "@/config/nav-config";
 import {getDictionary} from "@/lib/dictionary";
-import LocaleSwitcher from "@/components/locale-switcher";
 import {Locale} from "@/i18n-config";
+import LocaleSwitcher from "@/components/locale-switcher";
 
 interface MainNavProps {
     dictionary: Awaited<ReturnType<typeof getDictionary>>;
