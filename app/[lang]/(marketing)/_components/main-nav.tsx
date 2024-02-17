@@ -5,8 +5,19 @@ import {usePathname} from "next/navigation";
 import {cn} from "@/lib/utils";
 import {Button} from "@/components/ui/button";
 import {getNavConfig} from "@/config/nav-config";
+import {getDictionary} from "@/lib/dictionary";
+import LocaleSwitcher from "@/components/locale-switcher";
+import {Locale} from "@/i18n-config";
 
-const MainNav = () => {
+interface MainNavProps {
+    dictionary: Awaited<ReturnType<typeof getDictionary>>;
+    lang: Locale
+}
+
+const MainNav = ({
+                     dictionary,
+                     lang
+                 }: MainNavProps) => {
 
     const pathname = usePathname();
     const {main: mainNav} = getNavConfig()
@@ -17,6 +28,8 @@ const MainNav = () => {
                 mainNav
                     .filter(item => item.href != '/contact')
                     .map((item, index) => {
+                            // @ts-ignore
+                            const translatedTitle = dictionary.nav[item.title] || item.title;
                             return (
                                 <Button asChild variant="ghost" size="lg"
                                         className={cn(
@@ -25,7 +38,7 @@ const MainNav = () => {
                                         )}
                                         key={index}
                                 >
-                                    <Link href={item.href ?? '/'}>{item.title}</Link>
+                                    <Link href={item.href ?? '/'}>{translatedTitle}</Link>
                                 </Button>
                             )
                         }
@@ -38,9 +51,11 @@ const MainNav = () => {
                         pathname === "/contact" ? "text-foreground border-b-2 border-primary" : "text-foreground/60"
                     )
                 } size={"lg"}>
-                    <span className="md:inline">Contact us</span>
+                    <span className="md:inline">{dictionary.nav.contactus}</span>
                 </Button>
             </Link>
+
+            <LocaleSwitcher lang={lang} dictionary={dictionary.languages}/>
 
         </nav>
 

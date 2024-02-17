@@ -2,15 +2,25 @@ import {Mail, Phone} from "lucide-react";
 import {Button} from "@/components/ui/button";
 import SocialIcon from "@/components/social-icons";
 import Link from "next/link";
+import FacebookButton from "@/components/facebook-button";
+import {getDictionary} from "@/lib/dictionary";
 
+interface HeadingFormProps {
+    dictionary: Awaited<ReturnType<typeof getDictionary>>["contact"];
+}
+export const HeadingForm = ({
+                                 dictionary
+                            }: HeadingFormProps) => {
+    const { heading} = dictionary;
 
-export const HeadingForm = () => {
     return (
         <div className="mx-auto w-4/5 text-start">
             <h1 className="text-xl font-bold tracking-tight leading-10">
-                Have an idea?
+                {
+                    heading.question
+                }
             </h1>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-6xl">Drop us a line!</h2>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-6xl">{heading.title}</h2>
 
             <p className="mt-2 text-lg leading-8">
                 <Mail className="inline-block h-6 w-6 mr-2"/> devlachweb@gmail.com
@@ -32,6 +42,7 @@ export const HeadingForm = () => {
                 <Button  variant="outline" className="rounded-full hover:bg-sky-500" size="icon">
                     <SocialIcon kind="telegram" size={6} href={"/"}/>
                 </Button>
+                <FacebookButton/>
             </div>
 
         </div>

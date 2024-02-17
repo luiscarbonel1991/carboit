@@ -1,0 +1,93 @@
+{
+  "landing": {
+    "hero": {
+      "image_alt": "Personas trabajando en un sitio web",
+      "announcement": {
+        "question": "¿Interesado en colaborar?",
+        "contactus": "Contáctanos"
+      },
+      "h1": "Hagamos de tu producto un",
+      "h1_remark_word": "éxito",
+      "p_description": "Somos un estudio de desarrollo de software que ayuda a startups y empresas a construir software de calidad para lograr crecimiento y escalar.",
+      "button_lets_talk": "Hablemos"
+    },
+    "services": {
+      "h1": "Transforma tu visión en",
+      "h1_remark_word": "Realidad",
+      "p_description": "Asóciate con nosotros para navegar el paisaje digital con facilidad. Nuestros servicios de software a medida están diseñados para impulsar la innovación y la excelencia operativa.",
+      "button": "Construyamos juntos",
+      "data": {
+        "webDevelopment": {
+          "title": "Desarrollo Web",
+          "description": "Elevamos el desarrollo web creando páginas de marketing exquisitas y funcionales que capturan la esencia de tu marca. Cada sitio está meticulosamente diseñado para ofrecer una experiencia inmersiva."
+        },
+        "appDevelopment": {
+          "title": "Desarrollo de Aplicaciones",
+          "description": "Nuestro equipo está a la vanguardia de la innovación en desarrollo de aplicaciones, utilizando frameworks como Next.js y Spring Boot para construir soluciones que marcan la diferencia en usabilidad y rendimiento."
+        },
+        "customCms": {
+          "title": "Gestión de Contenido",
+          "description": "Entendemos la importancia de un CMS robusto y personalizado. Nos alejamos de las soluciones genéricas para proporcionar a nuestros clientes un sistema único que potencia una gestión de contenido eficiente."
+        }
+      }
+    },
+    "team": {
+      "title": "Nuestro Equipo",
+      "description": "Nuestro equipo apasionado colabora de manera integrada para crear soluciones."
+    },
+    "studyCases": {
+      "h1": "Casos Seleccionados",
+      "p_description": "Estudio de servicio completo para startups y empresas establecidas",
+      "data": {
+        "devlach": {
+          "title": "Blog DevLach",
+          "description": "DevLach es un blog diseñado para mostrar las últimas tecnologías y tendencias en el mundo del desarrollo web. Está construido utilizando tecnologías actuales como Next.js y TailwindCSS.",
+          "category": "Sitio Web"
+        },
+        "taxi": {
+          "title": "TaxiPremium24hours",
+          "description": "TaxiPremium24hours presenta un servicio de taxi disponible las 24 horas a través de un sitio web amigable para el usuario, construido con WordPress CMS y que incluye diseño responsivo y optimización SEO para mejorar la visibilidad y el rendimiento.",
+          "category": "Sitio Web"
+        }
+      }
+    },
+    "headingContact": {
+      "title": "Cuéntanos sobre tu proyecto",
+      "button_to_contact": "Di Hola",
+      "follow_us": "Síguenos"
+    }
+  },
+  "nav": {
+    "contactus": "Contáctanos",
+    "home": "Inicio",
+    "services": "Servicios",
+    "aboutus": "Acerca de",
+    "blog": "Blog",
+    "team": "Equipo",
+    "testimonials": "Testimonios"
+  },
+  "languages": {
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "contact": {
+    "heading":  {
+      "question": "¿Tienes una idea?",
+      "title": "¡Envíanos un mensaje!"
+    },
+    "form": {
+      "title": "Hablemos",
+      "email": "Correo electrónico",
+      "company": "Empresa",
+      "message": "Mensaje",
+      "messagePlaceholder": "Escribe tu mensaje aquí.",
+      "firstname": "Nombre",
+      "lastname": "Apellido",
+      "policyCheck": {
+        "agree": "Estoy de acuerdo con la",
+        "policyLink": "política de privacidad"
+      },
+      "submitButton": "Hablemos"
+    }
+  }
+}

@@ -4,12 +4,18 @@ import useOnScreen from "@/hooks/use-on-screen";
 import SocialIcon from "@/components/social-icons";
 import {Button} from "@/components/ui/button";
 import Image from "next/image";
+import {getDictionary} from "@/lib/dictionary";
 
+interface HeadingContactCleanProps {
+    dictionary: Awaited<ReturnType<typeof getDictionary>>["landing"];
+}
 
-export const HeadingContactClean = () => {
+export const HeadingContactClean = ({
+                                        dictionary
+                                    }: HeadingContactCleanProps) => {
 
     const [ref, visible] = useOnScreen({threshold: 0.1});
-
+    const headingContactDic = dictionary.headingContact
     return (
         <div className="max-w-7xl px-6 lg:px-8" ref={ref}>
             <div
@@ -19,18 +25,18 @@ export const HeadingContactClean = () => {
                     style={{opacity: 1, transform: 'none'}}>
                     <div className="mx-auto max-w-4xl flex flex-col md:flex-row justify-between items-center">
                         <div className="max-w-xl">
-                            <h2
-                                className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">Tell
-                                us about your project</h2>
+                            <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
+                                {headingContactDic.title}
+                            </h2>
                             <div className="mt-6 flex">
                                 <Link
                                     className="inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition bg-white text-neutral-950 hover:bg-neutral-200"
                                     href="/contact">
-                                    <span className="relative top-px">Say Hej</span>
+                                    <span className="relative top-px">{headingContactDic.button_to_contact}</span>
                                 </Link>
                             </div>
                             <div className="mt-10 border-t border-white/10 pt-10"><h3
-                                className="font-display text-base font-semibold text-white">Follow us</h3>
+                                className="font-display text-base font-semibold text-white">{headingContactDic.follow_us}</h3>
                                 <ul role="list" className="mt-6 flex sm:flex-row gap-2">
                                     <li>
                                         <Button variant="outline" className="rounded-full hover:bg-green-500"

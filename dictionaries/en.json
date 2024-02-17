@@ -1,0 +1,93 @@
+{
+  "landing": {
+    "hero": {
+      "image_alt": "People working on a website",
+      "announcement": {
+        "question": "Interested in collaborating?",
+        "contactus": "Contact us"
+      },
+      "h1": "Let’s make your product a",
+      "h1_remark_word": "success",
+      "p_description": "We are a software development studio that helps startups and enterprises build quality software to achieve growth and scale.",
+      "button_lets_talk": "Let's Talk"
+    },
+    "services": {
+      "h1": "Transform Your Vision into",
+      "h1_remark_word": "Reality",
+      "p_description": "Partner with us to navigate the digital landscape with ease. Our bespoke software services are tailored to spark innovation and operational excellence.",
+      "button": "Let's Build Together",
+      "data": {
+        "webDevelopment": {
+          "title": "Web Development",
+          "description": "We elevate web development by creating exquisite and functional marketing pages that capture the essence of your brand. Every site is meticulously designed to deliver an immersive experience."
+        },
+        "appDevelopment": {
+          "title": "Application Development",
+          "description": "Our team is at the forefront of application development innovation, utilizing frameworks like Next.js and Spring Boot to build solutions that make a difference in usability and performance."
+        },
+        "customCms": {
+          "title": "Custom Content Management",
+          "description": "We understand the importance of a robust and personalized CMS. We step away from generic solutions to provide our clients with a unique system that powers efficient content management tailored to their needs."
+        }
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "description": "Our passionate team collaborates seamlessly to create solutions."
+    },
+    "studyCases": {
+      "h1": "Selected Cases",
+      "p_description": "Full service studio for both startups and established businesses",
+      "data": {
+        "devlach": {
+          "title": "DevLach Blog",
+          "description": "DevLach is a blog designed to be a showcase of the latest technologies and trends in the world of web development. It is built using the latest technologies such as Next.js, TailwindCSS.",
+          "category": "Website"
+        },
+        "taxi": {
+          "title": "TaxiPremium24hours",
+          "description": "TaxiPremium24hours showcases a 24-hour taxi service via a user-friendly website built with WordPress CMS, featuring responsive design and SEO optimization for enhanced visibility and performance.",
+          "category": "Website"
+        }
+      }
+    },
+    "headingContact": {
+      "title": "Tell us about your project",
+      "button_to_contact": "Say Hej",
+      "follow_us": "Follow us"
+    }
+  },
+  "nav": {
+    "contactus": "Contact us",
+    "home": "Home",
+    "services": "Services",
+    "aboutus": "About",
+    "blog": "Blog",
+    "team": "Team",
+    "testimonials": "Testimonials"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Spanish"
+  },
+  "contact": {
+    "heading":  {
+      "question": "Have an idea?",
+      "title": "Drop us a line!"
+    },
+    "form": {
+      "title": "Trabajo consultas",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "messagePlaceholder": "Type your message here.",
+      "firstname": "First name",
+      "lastname": "Last name",
+      "policyCheck": {
+        "agree": "I agree with your",
+        "policyLink": "privacy policy"
+      },
+      "submitButton": "Let's talk"
+    }
+  }
+}

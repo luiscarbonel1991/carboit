@@ -3,11 +3,11 @@
 import {useState} from "react";
 import {Sheet, SheetContent, SheetTrigger} from "./ui/sheet";
 import {Button} from "./ui/button";
-import {Icons} from "@/app/(marketing)/_components/icons";
 import {MobileLink} from "./mobile-link";
 import {getNavConfig} from "@/config/nav-config";
 import {ScrollArea} from "./ui/scroll-area";
 import {siteMetadata} from "@/config/site-metadata";
+import { Icons } from "./icons";
 
 export const MobileNav = () => {
 
