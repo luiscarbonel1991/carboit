@@ -1,7 +1,8 @@
-import { siteConfig } from "@/config/site"
+
 import { type ClassValue, clsx } from "clsx"
 import { Metadata } from "next"
 import { twMerge } from "tailwind-merge"
+import {siteMetadata} from "@/config/site-metadata";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -9,27 +10,20 @@ export function cn(...inputs: ClassValue[]) {
 
 export const getSiteMetadata = () => {
   return {
-    title: {
-      default: siteConfig.name,
-      template: '%s | ' + siteConfig.name,
-    },
-    metadataBase: siteConfig.siteUrl ? new URL(siteConfig.siteUrl) : undefined,
-    description: siteConfig.description,
-    keywords: siteConfig.keywords,
-    authors: siteConfig.authors,
-    creator: siteConfig.authors[0].name,
-    ogImage: siteConfig.ogImage,
+    ...siteMetadata,
+    metadataBase: siteMetadata.siteUrl ? new URL(siteMetadata.siteUrl) : undefined,
+    creator: siteMetadata.authors[0].name,
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      url: siteConfig.siteUrl,
-      site_name: siteConfig.name,
+      url: siteMetadata.siteUrl,
+      site_name: siteMetadata.title,
       images: [
         {
-          url: siteConfig.ogImage,
+          url: siteMetadata.ogImage,
           width: 1200,
           height: 630,
-          alt: siteConfig.name,
+          alt: siteMetadata.title,
         },
       ],
     },
@@ -38,7 +32,7 @@ export const getSiteMetadata = () => {
       shortcut: "/favicon-16x16.png",
       apple: "/apple-touch-icon.png",
     },
-    manifest: `${siteConfig.siteUrl}/site.webmanifest`,
+    manifest: `${siteMetadata.siteUrl}/site.webmanifest`,
   } as Metadata
 }
 

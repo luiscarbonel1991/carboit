@@ -6,6 +6,7 @@ import {FacebookIcon, GithubIcon, InstagramIcon, LinkedinIcon, TwitterIcon} from
 import {Button} from "@/components/ui/button";
 import Image from "next/image";
 import {Card} from "@/components/ui/card";
+import {getDictionary} from "@/lib/dictionary";
 
 const team = [
     {
@@ -82,16 +83,23 @@ const TeamMember = ({name, role, imageUrl, socialMediaLinks}:
     );
 };
 
+interface TeamProps {
+    dictionary: Awaited<ReturnType<typeof getDictionary>>["landing"]
+}
 
-const Team = () => {
+const Team = ({
+                  dictionary
+              }: TeamProps) => {
+
+    const teamDic = dictionary.team;
     return (
         <section className="bg-white dark:bg-gray-900">
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:px-6">
                 <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-                    <h2 className="mb-4 text-5xl tracking-tight font-bold text-gray-900 dark:text-white">Our
-                        team</h2>
+                    <h2 className="mb-4 text-5xl tracking-tight font-bold text-gray-900 dark:text-white">
+                        {teamDic.title}</h2>
                     <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-                        Our passionate team collaborates seamlessly to create solutions.
+                        {teamDic.description}
                     </p>
                 </div>
                 {/*<div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-start items-center">*/}

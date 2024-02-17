@@ -3,12 +3,11 @@
 import {useState} from "react";
 import {Sheet, SheetContent, SheetTrigger} from "./ui/sheet";
 import {Button} from "./ui/button";
-import {siteConfig} from "@/config/site";
-import {Icons} from "@/app/(marketing)/_components/icons";
 import {MobileLink} from "./mobile-link";
-import {Logo} from "@/app/(marketing)/_components/logo";
-import {getNavConfig, navConfig} from "@/config/nav-config";
+import {getNavConfig} from "@/config/nav-config";
 import {ScrollArea} from "./ui/scroll-area";
+import {siteMetadata} from "@/config/site-metadata";
+import { Icons } from "./icons";
 
 export const MobileNav = () => {
 
@@ -62,7 +61,7 @@ export const MobileNav = () => {
                     onOpenChange={setIsOpen}
                 >
                     <Icons.logo className="mr-2 h-4 w-4"/>
-                    <span className="font-bold">{siteConfig.name}</span>
+                    <span className="font-bold">{siteMetadata.applicationName}</span>
                 </MobileLink>
 
 

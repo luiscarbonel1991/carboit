@@ -1,5 +1,3 @@
-
-
 export const siteKeywords = [
     'Carboit',
     'DevLach',
@@ -16,4 +14,18 @@ export const siteKeywords = [
     'typescript',
     'reactjs',
     'javascript',
+    'software development',
+    'digital transformation',
+    'custom software solutions',
+    'startup growth',
+    'enterprise software development',
+    'innovation',
+    'operational excellence',
+    'web development',
+    'application development',
+    'CMS customization',
+    'tech consulting',
+    'business scalability',
+    'digital strategy',
+    'technology solutions'
 ] as string[];

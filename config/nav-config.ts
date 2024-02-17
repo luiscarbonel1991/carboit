@@ -8,26 +8,26 @@ interface NavConfig{
 export const navConfig: NavConfig = {
     main: [
         {
-            title: 'Home',
+            title: 'home',
             href: '/',
         },
         {
-            title: 'Services',
+            title: 'services',
             href: '/services',
             disabled: true,
         },
         {
-            title: 'Testimonials',
+            title: 'testimonials',
             href: '/testimonials',
             disabled: true,
         },
         {
-            title: 'Team',
+            title: 'team',
             href: '/team',
             disabled: true,
         },
         {
-            title: 'Contact us',
+            title: 'contactus',
             href: '/contact',
         },
     ] as MainNavItem[],

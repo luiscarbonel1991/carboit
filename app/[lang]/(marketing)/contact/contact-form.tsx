@@ -14,6 +14,7 @@ import {Label} from "@/components/ui/label";
 import {ContactFormVales, ContactSchema} from "@/schemas";
 import {startTransition} from "react";
 import {sendEmail} from "@/actions/contact";
+import {getDictionary} from "@/lib/dictionary";
 
 const defaultValues: ContactFormVales = {
     firstname: "",
@@ -25,7 +26,16 @@ const defaultValues: ContactFormVales = {
     phone: "",
     subject: "",
 }
-export const ContactForm = () => {
+
+interface ContactFormProps {
+    dictionary: Awaited<ReturnType<typeof getDictionary>>["contact"];
+}
+
+export const ContactForm = ({
+                                dictionary
+                            }: ContactFormProps) => {
+
+    const {form: formDic} = dictionary
 
     const form = useForm<ContactFormVales>({
         resolver: zodResolver(ContactSchema),
@@ -58,14 +68,14 @@ export const ContactForm = () => {
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(handleSubmit)} className="mx-auto mt-16 w-4/5 sm:mt-16 space-y-3">
-                <h2 className="font-bold tracking-tight sm:text-xl">Work inquires</h2>
+                <h2 className="font-bold tracking-tight sm:text-xl">{formDic.title}</h2>
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <FormField
                         control={form.control}
                         name="firstname"
                         render={({field, formState}) => (
                             <FormItem>
-                                <FormLabel htmlFor="firstname">First name</FormLabel>
+                                <FormLabel htmlFor="firstname">{formDic.firstname}</FormLabel>
                                 <FormControl>
                                     <Input {...field} />
                                 </FormControl>
@@ -79,7 +89,7 @@ export const ContactForm = () => {
                         name="lastname"
                         render={({field, formState}) => (
                             <FormItem>
-                                <FormLabel htmlFor="lastname">Last name</FormLabel>
+                                <FormLabel htmlFor="lastname">{formDic.lastname}</FormLabel>
                                 <FormControl>
                                     <Input {...field} />
                                 </FormControl>
@@ -94,7 +104,7 @@ export const ContactForm = () => {
                             name="email"
                             render={({field, formState}) => (
                                 <FormItem>
-                                    <FormLabel htmlFor="email">Email</FormLabel>
+                                    <FormLabel htmlFor="email">{formDic.email}</FormLabel>
                                     <FormControl>
                                         <Input {...field} />
                                     </FormControl>
@@ -110,7 +120,7 @@ export const ContactForm = () => {
                             name="company"
                             render={({field, formState}) => (
                                 <FormItem>
-                                    <FormLabel htmlFor="company">Company</FormLabel>
+                                    <FormLabel htmlFor="company">{formDic.company}</FormLabel>
                                     <FormControl>
                                         <Input {...field} />
                                     </FormControl>
@@ -126,9 +136,9 @@ export const ContactForm = () => {
                             name="message"
                             render={({field, formState}) => (
                                 <FormItem>
-                                    <FormLabel htmlFor="message">Message</FormLabel>
+                                    <FormLabel htmlFor="message">{formDic.message}</FormLabel>
                                     <FormControl>
-                                        <Textarea placeholder="Type your message here." {...field} />
+                                        <Textarea placeholder={formDic.messagePlaceholder} {...field} />
                                     </FormControl>
                                     <FormMessage/>
                                 </FormItem>
@@ -150,10 +160,10 @@ export const ContactForm = () => {
                                     </FormControl>
 
                                     <Label htmlFor="terms" className="font-semibold leading-6">
-                                        I agree with your{' '}
+                                        {formDic.policyCheck.agree}{' '}
                                         <Link href={"/privacy-policy"}
                                               className="font-extrabold underline underline-offset-4">
-                                            privacy policy
+                                            {formDic.policyCheck.policyLink}
                                         </Link>
                                     </Label>
                                     <FormMessage/>
@@ -163,7 +173,7 @@ export const ContactForm = () => {
                     </div>
 
                     <Button type={"submit"} variant="default" className="sm:col-span-2">
-                        Let's talk
+                        {formDic.submitButton}
                     </Button>
                 </div>
             </form>
