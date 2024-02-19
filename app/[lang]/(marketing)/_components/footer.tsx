@@ -1,5 +1,5 @@
 import {Button} from "@/components/ui/button";
-import {Icons} from "./icons";
+import {Icons} from "@/components/icons";
 
 import Link from "next/link";
 import {siteMetadata} from "@/config/site-metadata";
