@@ -1,10 +1,11 @@
 'use client';
 import Link from "next/link";
 import useOnScreen from "@/hooks/use-on-screen";
-import SocialIcon from "@/components/social-icons";
-import {Button} from "@/components/ui/button";
 import Image from "next/image";
 import {getDictionary} from "@/lib/dictionary";
+import FacebookButton from "@/components/facebook-button";
+import WhatsappButton from "@/components/whatsapp-button";
+import InstagramButton from "@/components/instagram-button";
 
 interface HeadingContactCleanProps {
     dictionary: Awaited<ReturnType<typeof getDictionary>>["landing"];
@@ -39,20 +40,13 @@ export const HeadingContactClean = ({
                                 className="font-display text-base font-semibold text-white">{headingContactDic.follow_us}</h3>
                                 <ul role="list" className="mt-6 flex sm:flex-row gap-2">
                                     <li>
-                                        <Button variant="outline" className="rounded-full hover:bg-green-500"
-                                                size="icon">
-                                            <SocialIcon kind="whatsapp" size={6} href={"/"}/>
-                                        </Button>
+                                        <WhatsappButton />
                                     </li>
                                     <li>
-                                        <Button variant="outline" className="rounded-full hover:bg-sky-500" size="icon">
-                                            <SocialIcon kind="telegram" size={6} href={"/"}/>
-                                        </Button>
+                                        <InstagramButton/>
                                     </li>
                                     <li>
-                                        <Button variant="outline" className="rounded-full hover:bg-sky-500" size="icon">
-                                            <SocialIcon kind="facebook" size={6} href={"/"}/>
-                                        </Button>
+                                        <FacebookButton />
                                     </li>
                                 </ul>
                             </div>
