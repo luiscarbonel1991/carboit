@@ -3,6 +3,16 @@ import SvgBackground from "@/components/svg-background";
 import {ContactForm} from "@/app/[lang]/(marketing)/contact/contact-form";
 import {Locale} from "@/i18n-config";
 import {getDictionary} from "@/lib/dictionary";
+import {getSiteMetadata} from "@/lib/utils";
+import {Metadata} from "next";
+
+export const metadata = {
+    ...getSiteMetadata(),
+    title: {
+        default: "Contact Us",
+    },
+    description: "Connect with Carboit today and elevate your business with cutting-edge tech solutions. Ready to turn your ideas into reality! Contact us now."
+} as Metadata
 
 interface ContactPageProps {
     params: { lang: Locale }

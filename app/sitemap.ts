@@ -3,7 +3,7 @@ import {siteMetadata} from "@/config/site-metadata";
 
 
 const sitemap = (): MetadataRoute.Sitemap => {
-    const pages = [""];
+    const pages = ["", "contact"];
     const routes = pages.map((page) => ({
         url: `${siteMetadata.siteUrl}/${page}`,
         lastModified: new Date().toISOString().split('T')[0],
