@@ -4,6 +4,8 @@ import SocialIcon from "@/components/social-icons";
 import Link from "next/link";
 import FacebookButton from "@/components/facebook-button";
 import {getDictionary} from "@/lib/dictionary";
+import WhatsappButton from "@/components/whatsapp-button";
+import InstagramButton from "@/components/instagram-button";
 
 interface HeadingFormProps {
     dictionary: Awaited<ReturnType<typeof getDictionary>>["contact"];
@@ -36,12 +38,8 @@ export const HeadingForm = ({
 
             <div className="mt-6 flex sm:flex-row gap-1">
 
-                <Button  variant="outline" className="rounded-full hover:bg-green-500" size="icon">
-                    <SocialIcon kind="whatsapp" size={6} href={"/"}/>
-                </Button>
-                <Button  variant="outline" className="rounded-full hover:bg-sky-500" size="icon">
-                    <SocialIcon kind="telegram" size={6} href={"/"}/>
-                </Button>
+                <WhatsappButton />
+                <InstagramButton/>
                 <FacebookButton/>
             </div>
 
