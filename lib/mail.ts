@@ -2,6 +2,7 @@ import { Resend } from "resend";
 import {ContactFormVales} from "@/schemas";
 
 const resend = new Resend(process.env.RESEND_API_KEY)
+const corporationEmail = process.env.RESEND_CORPORATION_EMAIL!
 
 const emailTemplate = (formData: ContactFormVales) => {
     return `
@@ -34,7 +35,7 @@ const emailTemplate = (formData: ContactFormVales) => {
 export const sendContactEmail = async (formData: ContactFormVales) => {
     return await resend.emails.send({
         from: "Carboit <mail@carboit.com>",
-        to: [formData.email],
+        to: [formData.email, corporationEmail],
         subject: formData.subject || "Re:contact form submission",
         html: emailTemplate(formData)
     })
