@@ -13,7 +13,7 @@ const ServicesPage = async ({
                             }: ServicesPageProps) => {
     const dictionary = await getDictionary(lang)
     return (
-        <HeadingContactClean dictionary={dictionary.landing}/>
+        <HeadingContactClean lang={lang} dictionary={dictionary.landing}/>
     )
 }
 
