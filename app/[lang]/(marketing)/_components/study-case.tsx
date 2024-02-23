@@ -58,8 +58,8 @@ export const StudyCase = ({
                         return (
                             <li key={index}
                                 className="rounded-3xl max-w-full md:max-w-lg shadow-md hover:shadow-2xl transition duration-300">
-                                <article className="flex flex-col rounded-md">
-                                    <Card className="rounded-3xl">
+                                <article className="flex flex-col ">
+                                    <Card className="rounded-3xl border-0 shadow-none">
                                         <figure className="p-0">
                                             <Image src={caseStudy.image}
                                                    alt="Principal View of DevLach Blog" height={600} width={600}

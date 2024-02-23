@@ -5,6 +5,8 @@ import Image from "next/image";
 
 import {Poppins} from 'next/font/google';
 import {getDictionary} from "@/lib/dictionary";
+import { Locale } from "@/i18n-config";
+import { redirectPathURL } from "@/lib/utils";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -12,10 +14,12 @@ const poppins = Poppins({
 });
 
 interface HeroProps {
-    dictionary: Awaited<ReturnType<typeof getDictionary>>["landing"]
+    lang: Locale;
+    dictionary: Awaited<ReturnType<typeof getDictionary>>["landing"];
 }
 
 export const Hero = ({
+                        lang,
                          dictionary
                      }: HeroProps) => {
 
@@ -50,7 +54,7 @@ export const Hero = ({
                         <div
                             className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                             {announcement.question} {' '}
-                            <Link href="/contact" className="font-semibold text-indigo-600">
+                            <Link href={redirectPathURL(lang, '/contact')} className="font-semibold text-indigo-600">
                                 <span className="absolute inset-0" aria-hidden="true"/>
                                 {announcement.contactus} <span aria-hidden="true">&rarr;</span>
                             </Link>
@@ -68,7 +72,7 @@ export const Hero = ({
                                 className="rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 scale-105 font-bold"
                                 size="lg">
                             <Link
-                                href="/contact"
+                                href={redirectPathURL(lang, '/contact')}
                                 aria-label="Let's Talk"
                             >
                                 {button_lets_talk}

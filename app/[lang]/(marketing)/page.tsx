@@ -21,10 +21,10 @@ const MarketingPage = async ({
         <>
 
             <MaxWithWrapper className="grid grid-cols-1 space-y-32">
-                <Hero dictionary={dictionary.landing}/>
-                <ServicesSection dictionary={dictionary.landing}/>
+                <Hero lang={params.lang} dictionary={dictionary.landing}/>
+                <ServicesSection lang={params.lang} dictionary={dictionary.landing}/>
                 <StudyCase dictionary={dictionary.landing}/>
-                <HeadingContactClean dictionary={dictionary.landing}/>
+                <HeadingContactClean lang={params.lang} dictionary={dictionary.landing}/>
                 <Team dictionary={dictionary.landing}/>
             </MaxWithWrapper>
         </>

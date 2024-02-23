@@ -5,6 +5,9 @@ import {cn, getSiteMetadata} from '@/lib/utils'
 import {Toaster} from "@/components/ui/toaster"
 import {i18n, Locale} from "@/i18n-config";
 
+export async function generateStaticParams() {
+    return i18n.locales.map((locale) => ({lang: locale}));
+}
 
 const inter = Inter({subsets: ['latin']})
 
@@ -15,11 +18,7 @@ export const viewport: Viewport = {
     ],
 }
 
-export const metadata: Metadata = getSiteMetadata()
 
-export async function generateStaticParams() {
-    return i18n.locales.map((locale) => ({lang: locale}));
-}
 
 export default function RootLayout({
                                        children,
@@ -44,3 +43,7 @@ export default function RootLayout({
         </html>
     )
 }
+
+export const metadata: Metadata = getSiteMetadata()
+
+

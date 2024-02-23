@@ -3,6 +3,7 @@ import { type ClassValue, clsx } from "clsx"
 import { Metadata } from "next"
 import { twMerge } from "tailwind-merge"
 import {siteMetadata} from "@/config/site-metadata";
+import { Locale } from "@/i18n-config";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -36,3 +37,12 @@ export const getSiteMetadata = () => {
   } as Metadata
 }
 
+
+export const redirectPathURL = (locale: Locale, pathname: string = "") => {
+  if(!pathname || pathname === "/") return `/${locale}`;
+  const segments = pathname.split("/");
+  if (segments.length > 1 && segments[1] !== locale) {
+    segments.splice(1, 0, locale); 
+  }
+  return segments.join("/");
+}
