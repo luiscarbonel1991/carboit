@@ -63,7 +63,7 @@ export const StudyCase = ({
                                         <figure className="p-0">
                                             <Image src={caseStudy.image}
                                                    alt="Principal View of DevLach Blog" height={600} width={600}
-                                                   priority={true}
+                                                   loading="lazy"
                                                    className="rounded-3xl shadow-md"/>
                                         </figure>
                                         <CardHeader>
