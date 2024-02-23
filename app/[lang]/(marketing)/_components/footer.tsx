@@ -21,7 +21,7 @@ const Footer = ({ lang }: FooterProps) => {
                 </span>
                 </Link>
             </div>
-            <div
+            {/* <div
                 className="md:ml-auto w-full justify-between md:justify-end flex items-center gap-x-2 text-muted-foreground">
                 <Button variant="ghost" size="sm">
                     Privacy Policy
@@ -29,7 +29,7 @@ const Footer = ({ lang }: FooterProps) => {
                 <Button variant="ghost" size="sm">
                     Terms & Conditions
                 </Button>
-            </div>
+            </div> */}
         </footer>
     )
 }
