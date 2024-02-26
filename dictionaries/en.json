@@ -55,6 +55,9 @@
       "title": "Tell us about your project",
       "button_to_contact": "Say Hello",
       "follow_us": "Follow us"
+    },
+    "technologies": {
+      "title": "Platforms and Tools We Use" 
     }
   },
   "nav": {

@@ -55,6 +55,9 @@
       "title": "Cuéntanos sobre tu proyecto",
       "button_to_contact": "Di Hola",
       "follow_us": "Síguenos"
+    },
+    "technologies": {
+      "title": "Plataformas y Herramientas que Usamos" 
     }
   },
   "nav": {

@@ -12,8 +12,9 @@ const team = [
     {
         name: "Luis Carbonel",
         profile:
-            "https://avatars.githubusercontent.com/u/95326684?v=4",
-        position: "Founder & CEO",
+            "/static/images/authors/luis.png",
+        // "https://avatars.githubusercontent.com/u/95326684?v=4",    
+        position: "Founder & Full Stack S. Engineer",
         socialMediaLinks: {
             facebook: "",
             twitter: "",
@@ -39,12 +40,12 @@ const TeamMember = ({name, role, imageUrl, socialMediaLinks}:
 
                         }) => {
     return (
-        <Card className="text-center text-gray-500 dark:text-gray-400 p-8 hover:shadow-lg">
+        <Card className="text-center text-gray-500 dark:text-gray-400 p-4 hover:shadow-lg">
             <Image
                 src={imageUrl}
                 alt={`${name} Avatar`}
                 width={144} height={144}
-                className="mx-auto mb-4 rounded-full"
+                className="mx-auto mb-4 rounded-md w-fit"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 <Link href="#">{name}</Link>
