@@ -25,7 +25,7 @@ export const HeadingForm = ({
             <h2 className="text-3xl font-bold tracking-tight sm:text-6xl">{heading.title}</h2>
 
             <p className="mt-2 text-lg leading-8">
-                <Mail className="inline-block h-6 w-6 mr-2"/> devlachweb@gmail.com
+                <Mail className="inline-block h-6 w-6 mr-2"/> carboitdev@gmail.com
             </p>
 
             <p className="mt-2 text-lg leading-8">
