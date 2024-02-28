@@ -4,10 +4,10 @@ import '../globals.css'
 import {cn, getSiteMetadata} from '@/lib/utils'
 import {Toaster} from "@/components/ui/toaster"
 import {i18n, Locale} from "@/i18n-config";
-
 export async function generateStaticParams() {
     return i18n.locales.map((locale) => ({lang: locale}));
 }
+
 
 const inter = Inter({subsets: ['latin']})
 
