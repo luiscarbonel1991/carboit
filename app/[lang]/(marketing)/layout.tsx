@@ -14,7 +14,8 @@ const MarketingLayout = ({
         <>
             <div className="relative flex min-h-screen flex-col bg-background">
                 <Header lang={params.lang}/>
-                <main className="flex-1">
+
+                <main className="flex-1 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
                     {children}
                 </main>
                 <Footer lang={params.lang}/>
@@ -22,5 +23,7 @@ const MarketingLayout = ({
         </>
     )
 }
+
+
 
 export default MarketingLayout
