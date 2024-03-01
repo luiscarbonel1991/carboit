@@ -19,17 +19,14 @@ const MarketingPage = async ({
     const dictionary = await getDictionary(params.lang);
 
     return (
-        <>
-
-            <MaxWithWrapper className="grid grid-cols-1 space-y-32">
-                <Hero lang={params.lang} dictionary={dictionary.landing}/>
-                <ServicesSection lang={params.lang} dictionary={dictionary.landing}/>
-                <Technologies dictionary={dictionary.landing}/>
-                <StudyCase dictionary={dictionary.landing}/>
-                <HeadingContactClean lang={params.lang} dictionary={dictionary.landing}/>
-                <Team dictionary={dictionary.landing}/>
-            </MaxWithWrapper>
-        </>
+        <MaxWithWrapper className="grid grid-cols-1 space-y-32">
+            <Hero lang={params.lang} dictionary={dictionary.landing}/>
+            <ServicesSection lang={params.lang} dictionary={dictionary.landing}/>
+            <Technologies dictionary={dictionary.landing}/>
+            <StudyCase dictionary={dictionary.landing}/>
+            <HeadingContactClean lang={params.lang} dictionary={dictionary.landing}/>
+            <Team dictionary={dictionary.landing}/>
+        </MaxWithWrapper>
     );
 }
 

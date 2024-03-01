@@ -36,16 +36,16 @@ export const Hero = ({
 
         <>
             <main
-                className={`isolate container grid lg:grid-cols-2 place-items-center pt-32 md:pb-24 px-4 md:px-10 ${poppins.className}`}>
-                <SvgBackground/>
+                className={`isolate container grid lg:grid-cols-2 place-items-center pt-32 px-4 md:px-10 ${poppins.className}`}>
+                {/*<SvgBackground/>*/}
                 <div className="py-6 md:order-1 hidden md:block">
                     <Image
-                        src="/static/images/marketing/light_hero_building_websites_v1.svg"
+                        src="/static/images/marketing/hero_v3.png"
                         alt={image_alt}
                         height={440}
                         width={440}
                         priority={true}
-                        className="rounded-3xl shadow-md"
+                        className="rounded-2xl backdrop-sepia-0"
                     />
                 </div>
 
