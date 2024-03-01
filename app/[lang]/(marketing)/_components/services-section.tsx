@@ -51,7 +51,7 @@ export const ServicesSection = ({
                 <div className="lg:w-1/2 w-full mb-6 lg:mb-0 text-center">
                     <h2 className="mb-4 flex flex-col sm:text-5xl text-4xl font-semibold gap-2">
 
-                        <span className="font-light text-md">Services</span>
+                        <span className="font-light text-md">{servicesDic.title}</span>
                         <span>{servicesDic.h1}</span>
                         <span
                             className="tracking-tight inline bg-clip-text text-transparent bg-gradient-to-b from-[#FF1CF7] to-[#b249f8]">
@@ -81,7 +81,7 @@ export const ServicesSection = ({
                             (
                                 <CardService
                                     key={index}
-                                    cardClassName="shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out min-h-[350px]"
+                                    cardClassName="shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out min-h-[375px]"
                                     title={serviceDic.title}
                                     description={serviceDic.description}
                                     headerContent={service.icon}
