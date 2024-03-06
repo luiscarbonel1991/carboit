@@ -25,5 +25,4 @@ const MarketingLayout = ({
 }
 
 
-
 export default MarketingLayout

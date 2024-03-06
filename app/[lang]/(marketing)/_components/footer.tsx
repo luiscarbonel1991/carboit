@@ -3,14 +3,14 @@ import {Icons} from "@/components/icons";
 
 import Link from "next/link";
 import {siteMetadata} from "@/config/site-metadata";
-import { Locale } from "@/i18n-config";
-import { redirectPathURL } from "@/lib/utils";
+import {Locale} from "@/i18n-config";
+import {redirectPathURL} from "@/lib/utils";
 
 interface FooterProps {
     lang: Locale
 }
 
-const Footer = ({ lang }: FooterProps) => {
+const Footer = ({lang}: FooterProps) => {
     return (
         <footer className="container flex items-center w-full p-6 bg-background z-50 dark:bg-[#1F1F1F]">
             <div className="mr-4 hidden md:flex w-full">
@@ -21,15 +21,17 @@ const Footer = ({ lang }: FooterProps) => {
                 </span>
                 </Link>
             </div>
-            {/* <div
+            <div
                 className="md:ml-auto w-full justify-between md:justify-end flex items-center gap-x-2 text-muted-foreground">
-                <Button variant="ghost" size="sm">
-                    Privacy Policy
-                </Button>
-                <Button variant="ghost" size="sm">
+                <Link href="/privacy-policy">
+                    <Button variant="ghost" size="sm">
+                        Privacy Policy
+                    </Button>
+                </Link>
+                {/* <Button variant="ghost" size="sm">
                     Terms & Conditions
-                </Button>
-            </div> */}
+                </Button>*/}
+            </div>
         </footer>
     )
 }

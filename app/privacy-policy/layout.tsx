@@ -1,17 +1,11 @@
-import type {Metadata, Viewport} from 'next'
-import {Inter} from 'next/font/google'
+import {cn, getSiteMetadata} from "@/lib/utils";
+import {Inter} from "next/font/google";
+import type {Metadata, Viewport} from "next";
 import '../globals.css'
-import {cn, getSiteMetadata} from '@/lib/utils'
-import {Toaster} from "@/components/ui/toaster"
-import {i18n, Locale} from "@/i18n-config";
-
-export async function generateStaticParams() {
-    return i18n.locales.map((locale) => ({lang: locale}));
-}
-
+import Header from "@/app/[lang]/(marketing)/_components/header";
+import Footer from "@/app/[lang]/(marketing)/_components/footer";
 
 const inter = Inter({subsets: ['latin']})
-
 export const viewport: Viewport = {
     themeColor: [
         {media: "(prefers-color-scheme: light)", color: "white"},
@@ -22,28 +16,25 @@ export const viewport: Viewport = {
 
 export default function RootLayout({
                                        children,
-                                       params
                                    }: {
-    children: React.ReactNode,
-    params: { lang: Locale }
+    children: React.ReactNode
 }) {
     return (
-        <html lang={params.lang} suppressHydrationWarning>
+        <html lang="en" suppressHydrationWarning>
         <body data-theme={"light"} className={
             cn(
                 "min-h-screen bg-background font-sans antialiased",
                 inter.className
             )
         }>
+        <Header lang={"en"}/>
         <div vaul-drawer-wrapper="">
             {children}
         </div>
-        <Toaster/>
+        <Footer lang={"en"}/>
         </body>
         </html>
     )
 }
 
 export const metadata: Metadata = getSiteMetadata()
-
-

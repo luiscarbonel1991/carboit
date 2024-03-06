@@ -1,7 +1,6 @@
 'use client';
 import Link from "next/link";
 import useOnScreen from "@/hooks/use-on-screen";
-import { Locale } from "@/i18n-config";
 
 
 export const HeadingContact = () => {

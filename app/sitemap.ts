@@ -1,10 +1,10 @@
 import {MetadataRoute} from "next";
 import {siteMetadata} from "@/config/site-metadata";
-import { i18n } from "@/i18n-config";
+import {i18n} from "@/i18n-config";
 
 
 const sitemap = (): MetadataRoute.Sitemap => {
-    const pages = ["", "contact"];
+    const pages = ["", "contact", "services/odoo"];
     const languages = i18n.locales;
     // const routes = pages.map((page) => ({
     //     url: `${siteMetadata.siteUrl}/${page}`,
