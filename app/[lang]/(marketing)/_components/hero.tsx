@@ -39,7 +39,7 @@ export const Hero = ({
                 {/*<SvgBackground/>*/}
                 <div className="py-6 md:order-1 hidden md:block">
                     <Image
-                        src="/static/images/marketing/hero_v3.png"
+                        src="/static/images/marketing/hero/hero_440x440.webp"
                         alt={image_alt}
                         height={440}
                         width={440}

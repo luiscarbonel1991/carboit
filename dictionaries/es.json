@@ -36,6 +36,10 @@
         }
       }
     },
+    "testimonials": {
+      "heading": "Testimonios",
+      "description": "Lo que nuestros clientes dicen sobre nosotros"
+    },
     "team": {
       "title": "Nuestro Equipo",
       "description": "Nuestro equipo apasionado colabora de manera integrada para crear soluciones."
@@ -72,7 +76,8 @@
     "aboutus": "Acerca de",
     "blog": "Blog",
     "team": "Equipo",
-    "testimonials": "Testimonios"
+    "testimonials": "Testimonios",
+    "odoo": "Odoo"
   },
   "languages": {
     "en": "Inglés",

@@ -36,6 +36,10 @@
         }
       }
     },
+    "testimonials": {
+      "heading": "Testimonials",
+      "description": "What Our Clients Says About Us"
+    },
     "team": {
       "title": "Our Team",
       "description": "Our passionate team collaborates seamlessly to create solutions."
@@ -72,7 +76,8 @@
     "aboutus": "About",
     "blog": "Blog",
     "team": "Team",
-    "testimonials": "Testimonials"
+    "testimonials": "Testimonials",
+    "odoo": "Odoo"
   },
   "languages": {
     "en": "English",

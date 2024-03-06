@@ -7,6 +7,7 @@ import {Locale} from "@/i18n-config";
 import {getDictionary} from "@/lib/dictionary";
 import Team from "@/app/[lang]/(marketing)/_components/team";
 import Technologies from "./_components/technologies";
+import Testimonial from "@/app/[lang]/(marketing)/_components/testimonials";
 
 interface MarketingPageProps {
     params: { lang: Locale }
@@ -24,6 +25,7 @@ const MarketingPage = async ({
             <ServicesSection lang={params.lang} dictionary={dictionary.landing}/>
             <Technologies dictionary={dictionary.landing}/>
             <StudyCase dictionary={dictionary.landing}/>
+            <Testimonial dictionary={dictionary.landing}/>
             <HeadingContactClean lang={params.lang} dictionary={dictionary.landing}/>
             <Team dictionary={dictionary.landing}/>
         </MaxWithWrapper>

@@ -12,6 +12,10 @@ export const navConfig: NavConfig = {
             href: '/',
         },
         {
+            title: 'Odoo',
+            href: '/services/odoo',
+        },
+        {
             title: 'services',
             href: '/services',
             disabled: true,
@@ -35,6 +39,11 @@ export const navConfig: NavConfig = {
         {
             title: 'Home',
             href: '/',
+            items:[],
+        },
+        {
+            title: 'Odoo',
+            href: '/services/odoo',
             items:[],
         },
         {

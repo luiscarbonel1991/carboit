@@ -20,7 +20,7 @@ const ServicesPage = async ({
     return (
         <>
             <Hero dictionary={dictionary.odoo}/>
-            <OdooModules dictionary={dictionary.odoo}/>
+            <OdooModules lang={lang} dictionary={dictionary.odoo}/>
         </>
 
     )
