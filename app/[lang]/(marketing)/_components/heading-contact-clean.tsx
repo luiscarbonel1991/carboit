@@ -3,12 +3,12 @@
 import Link from "next/link";
 import useOnScreen from "@/hooks/use-on-screen";
 import Image from "next/image";
-import { getDictionary } from "@/lib/dictionary";
+import {getDictionary} from "@/lib/dictionary";
 import FacebookButton from "@/components/facebook-button";
 import WhatsappButton from "@/components/whatsapp-button";
 import InstagramButton from "@/components/instagram-button";
-import { Locale } from "@/i18n-config";
-import { redirectPathURL } from "@/lib/utils";
+import {Locale} from "@/i18n-config";
+import {redirectPathURL} from "@/lib/utils";
 
 interface HeadingContactCleanProps {
     lang: Locale;
@@ -16,11 +16,11 @@ interface HeadingContactCleanProps {
 }
 
 export const HeadingContactClean = ({
-    lang,
-    dictionary
-}: HeadingContactCleanProps) => {
+                                        lang,
+                                        dictionary
+                                    }: HeadingContactCleanProps) => {
 
-    const [ref, visible] = useOnScreen({ threshold: 0.1 });
+    const [ref, visible] = useOnScreen({threshold: 0.1});
     const headingContactDic = dictionary.headingContact
     return (
         <div className="max-w-7xl px-6 lg:px-8" ref={ref}>
@@ -28,7 +28,7 @@ export const HeadingContactClean = ({
                 className={`mx-auto max-w-2xl lg:max-w-none transition-opacity duration-700 ${visible ? 'opacity-100' : 'opacity-0'}`}>
                 <div
                     className="-mx-6 bg-gradient-to-r from-slate-800 to-slate-950 px-6 py-20 sm:mx-0 sm:py-32 md:px-12 rounded-3xl"
-                    style={{ opacity: 1, transform: 'none' }}>
+                    style={{opacity: 1, transform: 'none'}}>
                     <div className="mx-auto max-w-4xl flex flex-col md:flex-row justify-between items-center">
                         <div className="max-w-xl">
                             <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
@@ -45,13 +45,13 @@ export const HeadingContactClean = ({
                                 className="font-display text-base font-semibold text-white">{headingContactDic.follow_us}</h3>
                                 <ul role="list" className="mt-6 flex sm:flex-row gap-2">
                                     <li>
-                                        <WhatsappButton />
+                                        <WhatsappButton/>
                                     </li>
                                     <li>
-                                        <InstagramButton />
+                                        <InstagramButton/>
                                     </li>
                                     <li>
-                                        <FacebookButton />
+                                        <FacebookButton/>
                                     </li>
                                 </ul>
                             </div>

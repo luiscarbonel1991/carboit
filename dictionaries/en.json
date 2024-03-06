@@ -29,6 +29,10 @@
         "customCms": {
           "title": "Custom Content Management",
           "description": "We understand the importance of a robust and personalized CMS. We step away from generic solutions to provide our clients with a unique system that powers efficient content management tailored to their needs."
+        },
+        "odoo": {
+            "title": "Odoo Services",
+            "description": "We are experts in Odoo, the comprehensive business management software that covers all your needs. From CRM to accounting, inventory, online marketing, sales, purchases, manufacturing, human resources, and more."
         }
       }
     },
@@ -92,6 +96,32 @@
         "policyLink": "privacy policy"
       },
       "submitButton": "Let's talk"
+    }
+  },
+  "odoo": {
+    "hero" : {
+        "h1": "Welcome to",
+        "h1_remark_word": "Odoo",
+        "h1_rest": "Services",
+        "p_description": "Transform your business with Odoo, the comprehensive business management software that covers all your needs. From CRM to accounting, inventory, online marketing, sales, purchases, manufacturing, human resources, and more. Discover how Odoo can drive your company's growth and efficiency.",
+        "button_lets_talk": "Let's Talk"
+    },
+    "modules": {
+      "sales": {
+        "title": "Sales",
+        "description": "Create clean, professional, and interactive quotes instantly with the incredible quote builder from Odoo. You can manage your sales orders and online store all in one platform.",
+        "button": "Let's Talk Sales"
+      },
+      "purchase": {
+        "title": "Purchase",
+        "description": "From quotation requests to receipts, from product variants to supplier invoices, let Odoo do all the work for you. Simplify your quotation requests and purchase orders, as well as create custom rules and replenishment methods.",
+        "button": "Let's Talk Purchase"
+      },
+      "inventory": {
+        "title": "Inventory",
+        "description": "Manage your inventory in real-time with various features such as serial numbers, lots, packaging, storage strategies, and manage incoming and outgoing shipments.",
+        "button": "Let's Talk Inventory"
+      }
     }
   }
 }

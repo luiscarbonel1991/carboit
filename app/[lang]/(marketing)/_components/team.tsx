@@ -23,6 +23,19 @@ const team = [
             linkedin: "https://www.linkedin.com/in/luiscarbonel91/"
         }
     },
+    {
+        name: "Ernesto Mato",
+        profile:
+            "https://avatars.githubusercontent.com/u/52477910?v=4",
+        position: "Software Engineer & Odoo Engineer",
+        socialMediaLinks: {
+            facebook: "",
+            twitter: "",
+            github: "https://github.com/devodoo",
+            instagram: "",
+            linkedin: "https://www.linkedin.com/in/ernesto-mato/"
+        }
+    },
 ]
 
 const TeamMember = ({name, role, imageUrl, socialMediaLinks}:

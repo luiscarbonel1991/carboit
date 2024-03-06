@@ -29,6 +29,10 @@
         "customCms": {
           "title": "Gestión de Contenido",
           "description": "Entendemos la importancia de un CMS robusto y personalizado. Nos alejamos de las soluciones genéricas para proporcionar a nuestros clientes un sistema único que potencia una gestión de contenido eficiente."
+        },
+        "odoo": {
+          "title": "Odoo",
+          "description": "Odoo es un software de gestión empresarial que cubre todas tus necesidades. Desde CRM hasta contabilidad, inventario, marketing online, ventas, compras, manufactura, recursos humanos, y más."
         }
       }
     },
@@ -58,7 +62,7 @@
       "follow_us": "Síguenos"
     },
     "technologies": {
-      "title": "Plataformas y Herramientas que Usamos" 
+      "title": "Plataformas y Herramientas que Usamos"
     }
   },
   "nav": {
@@ -75,7 +79,7 @@
     "es": "Español"
   },
   "contact": {
-    "heading":  {
+    "heading": {
       "question": "¿Tienes una idea?",
       "title": "¡Envíanos un mensaje!"
     },
@@ -92,6 +96,32 @@
         "policyLink": "política de privacidad"
       },
       "submitButton": "Hablemos"
+    }
+  },
+  "odoo": {
+    "hero": {
+      "h1": "Bienvenido a",
+      "h1_remark_word": "Odoo",
+      "h1_rest": "Services",
+      "p_description": "Transforma tu negocio con Odoo, el completo software de gestión empresarial que cubre todas tus necesidades. Desde CRM hasta contabilidad, inventario, marketing online, ventas, compras, manufactura, recursos humanos, y más. Descubre cómo Odoo puede impulsar el crecimiento y la eficiencia de tu empresa.",
+      "button_lets_talk": "Hablemos"
+    },
+    "modules": {
+      "sales": {
+        "title": "Ventas",
+        "description": "Crea presupuestos limpios, profesionales e interactivos de manera instantánea con el increíble creador de presupuestos de Odoo. Puedes gestionar tus órdenes de venta y tu tienda en línea en una sola plataforma.",
+        "button": "Hablemos de Ventas"
+      },
+      "purchase": {
+        "title": "Compra",
+        "description": "Desde solicitudes de presupuesto hasta recibos, desde variantes de producto hasta facturas de proveedor, deja que Odoo haga todo el trabajo por ti. Simplifica tus solicitudes de presupuesto y órdenes de compra, además de crear reglas personalizadas y métodos de reabastecimiento.",
+        "button": "Hablemos de Compras"
+      },
+      "inventory": {
+        "title": "Inventario",
+        "description": "Gestiona tu inventario en tiempo real con varias funcionalidades como números de serie, lotes, embalaje, estrategias de almacenamiento, además puedes gestionar los envíos entrantes y salientes.",
+        "button": "Hablemos de Inventario"
+      }
     }
   }
 }

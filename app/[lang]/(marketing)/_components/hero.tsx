@@ -1,12 +1,11 @@
 import Link from "next/link";
 import {Button} from "@/components/ui/button";
-import SvgBackground from "@/components/svg-background";
 import Image from "next/image";
 
 import {Poppins} from 'next/font/google';
 import {getDictionary} from "@/lib/dictionary";
-import { Locale } from "@/i18n-config";
-import { redirectPathURL } from "@/lib/utils";
+import {Locale} from "@/i18n-config";
+import {redirectPathURL} from "@/lib/utils";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -19,7 +18,7 @@ interface HeroProps {
 }
 
 export const Hero = ({
-                        lang,
+                         lang,
                          dictionary
                      }: HeroProps) => {
 

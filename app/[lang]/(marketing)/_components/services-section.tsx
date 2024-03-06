@@ -28,6 +28,13 @@ const services = [
         description: "We understand the importance of a robust and personalized CMS. We step away from generic solutions to provide our clients with a unique system that powers efficient content management tailored to their needs.",
         icon: <AreaChart size={48} className="text-pink-500"/>,
         link: undefined
+    },
+    {
+        id: "odoo",
+        title: "Odoo ERP",
+        description: "We specialize in Odoo ERP, an all-in-one management software that offers a range of business applications that form a complete suite of enterprise management applications.",
+        icon: <AreaChart size={48} className="text-pink-500"/>,
+        link: "/services/odoo"
     }
 ];
 
@@ -47,7 +54,7 @@ export const ServicesSection = ({
     return (
         <section className="grid grid-cols-1 px-4 md:px-10 py-10">
 
-            <div className="flex flex-wrap w-full justify-center mb-8">
+            <div className="flex flex-wrap w-full justify-center mb-12">
                 <div className="lg:w-1/2 w-full mb-6 lg:mb-0 text-center">
                     <h2 className="mb-4 flex flex-col sm:text-5xl text-4xl font-semibold gap-2">
 
@@ -72,7 +79,7 @@ export const ServicesSection = ({
             </div>
 
 
-            <div className="grid lg:grid-cols-3 gap-4 place-items-center">
+            <div className="grid lg:grid-cols-2 gap-12 place-items-center">
                 {
                     services.map((service, index) => {
                         // @ts-ignore
@@ -80,6 +87,7 @@ export const ServicesSection = ({
                         return (
                             (
                                 <CardService
+                                    locale={lang}
                                     key={index}
                                     cardClassName="shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out min-h-[375px]"
                                     title={serviceDic.title}

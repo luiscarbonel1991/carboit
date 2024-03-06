@@ -2,8 +2,11 @@ import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} f
 import {Button} from "@/components/ui/button";
 import {ReactNode} from "react";
 import Link from "next/link";
+import {Locale} from "@/i18n-config";
+import {redirectPathURL} from "@/lib/utils";
 
 interface CardServiceProps {
+    locale: Locale
     title: string
     description: string
     headerContent: ReactNode,
@@ -12,6 +15,7 @@ interface CardServiceProps {
 }
 
 const CardService = ({
+                         locale,
                          title,
                          description,
                          headerContent,
@@ -32,11 +36,11 @@ const CardService = ({
             <CardFooter>
                 {
                     link && (
-                        <Button asChild variant="outline" size="sm" className="rounded-3xl">
-                            <Link href={link}
-                                  aria-label={`Learn more about ${title}`}
+                        <Button asChild variant="secondary" size="sm" className="rounded-3xl">
+                            <Link href={redirectPathURL(locale, link)}
+                                  aria-label={locale === "en" ? `Learn more ${title}` : `Saber más ${title}`}
                             >
-                                Learn more →
+                                {locale === "en" ? "Learn more" : "Saber más"} &rarr;
                             </Link>
                         </Button>
                     )
