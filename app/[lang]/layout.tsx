@@ -5,8 +5,10 @@ import {cn, getSiteMetadata} from '@/lib/utils'
 import {Toaster} from "@/components/ui/toaster"
 import {i18n, Locale} from "@/i18n-config";
 
-import { GoogleTagManager,  } from '@next/third-parties/google'
-import {gtmId} from "@/config/site-metadata";
+import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
+import {thirdParties} from "@/config/site-metadata";
+
+const {tagManager, analytics} = thirdParties.google
 
 export async function generateStaticParams() {
     return i18n.locales.map((locale) => ({lang: locale}));
@@ -43,7 +45,8 @@ export default function RootLayout({
         </div>
         <Toaster/>
         </body>
-        <GoogleTagManager gtmId={gtmId}/>
+        <GoogleTagManager gtmId={tagManager.id}/>
+        <GoogleAnalytics  gaId={analytics.id} />
         </html>
     )
 }
