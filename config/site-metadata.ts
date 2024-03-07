@@ -1,7 +1,17 @@
 import {Metadata} from "next";
 import {siteKeywords} from "@/config/site-keywork";
 
-export const gtmId = 'GTM-MB2DJVS3'
+export const thirdParties = {
+    google: {
+        tagManager: {
+            id: 'GTM-MB2DJVS3'
+        },
+        analytics: {
+            id: 'G-43NCH6MD9S'
+        }
+    }
+
+}
 
 
 interface Author {
