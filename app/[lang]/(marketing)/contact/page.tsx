@@ -5,13 +5,15 @@ import {Locale} from "@/i18n-config";
 import {getDictionary} from "@/lib/dictionary";
 import {getSiteMetadata} from "@/lib/utils";
 import {Metadata} from "next";
+import {contactPageKeywords} from "@/config/site-keywork";
 
 export const metadata = {
-    ...getSiteMetadata(),
-    title: {
-        default: "Contact Us",
-    },
-    description: "Connect with Carboit today and elevate your business with cutting-edge tech solutions. Ready to turn your ideas into reality! Contact us now."
+    ...getSiteMetadata({
+        title: "Contact Us",
+        description: "Connect with Carboit today and elevate your business with cutting-edge tech solutions. Ready to turn your ideas into reality! Contact us now.",
+        keywords: [...contactPageKeywords]
+    }),
+
 } as Metadata
 
 interface ContactPageProps {

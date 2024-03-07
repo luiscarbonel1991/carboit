@@ -37,4 +37,4 @@ export default function RootLayout({
     )
 }
 
-export const metadata: Metadata = getSiteMetadata()
+export const metadata: Metadata = getSiteMetadata({})

@@ -9,9 +9,16 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export const getSiteMetadata = () => {
-  return {
+export const getSiteMetadata = ({
+    title = siteMetadata.title,
+    description = siteMetadata.description,
+    keywords = siteMetadata.keywords,
+                                }) => {
+  const metadata = {
     ...siteMetadata,
+    title,
+    description,
+    keywords,
     metadataBase: siteMetadata.siteUrl ? new URL(siteMetadata.siteUrl) : undefined,
     creator: siteMetadata.authors[0].name,
     openGraph: {
@@ -41,6 +48,9 @@ export const getSiteMetadata = () => {
     },
     manifest: `${siteMetadata.siteUrl}/site.webmanifest`,
   } as Metadata
+
+  return metadata;
+
 }
 
 
