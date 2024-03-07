@@ -35,12 +35,6 @@ export const getSiteMetadata = ({
         },
       ],
     },
-    alternates: {
-      canonical: './',
-      types: {
-        'application/rss+xml': `${siteMetadata.siteUrl}/feed.xml`,
-      },
-    },
     icons: {
       icon: "/favicon.ico",
       shortcut: "/favicon-16x16.png",

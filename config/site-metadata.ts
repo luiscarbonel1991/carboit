@@ -1,6 +1,9 @@
 import {Metadata} from "next";
 import {siteKeywords} from "@/config/site-keywork";
 
+export const gtmId = 'GTM-MB2DJVS3'
+
+
 interface Author {
     name: string;
     url: string;
