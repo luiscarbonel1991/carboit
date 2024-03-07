@@ -5,7 +5,7 @@ import {cn, getSiteMetadata} from '@/lib/utils'
 import {Toaster} from "@/components/ui/toaster"
 import {i18n, Locale} from "@/i18n-config";
 
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager,  } from '@next/third-parties/google'
 import {gtmId} from "@/config/site-metadata";
 
 export async function generateStaticParams() {
@@ -42,8 +42,8 @@ export default function RootLayout({
             {children}
         </div>
         <Toaster/>
-        <GoogleTagManager gtmId={gtmId}/>
         </body>
+        <GoogleTagManager gtmId={gtmId}/>
         </html>
     )
 }
