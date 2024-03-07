@@ -46,7 +46,7 @@ export default function RootLayout({
         <Toaster/>
         </body>
         <GoogleTagManager gtmId={tagManager.id}/>
-        <GoogleAnalytics  gaId={analytics.id} />
+        {/*<GoogleAnalytics  gaId={analytics.id} />*/}
         </html>
     )
 }
