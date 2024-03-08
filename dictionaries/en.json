@@ -1,5 +1,9 @@
 {
   "landing": {
+    "seo": {
+      "title": "Carboit - Software Development Studio",
+      "description": "Carboit is a software development studio that helps startups and enterprises build quality software to achieve growth and scale. We offer web development, application development, custom content management, and Odoo services."
+    },
     "hero": {
       "image_alt": "People working on a website",
       "announcement": {
@@ -84,6 +88,10 @@
     "es": "Spanish"
   },
   "contact": {
+    "seo": {
+      "title": "Contact Us",
+      "description": "Connect with Carboit today and elevate your business with cutting-edge tech solutions. Ready to turn your ideas into reality! Contact us now."
+    },
     "heading":  {
       "question": "Have an idea?",
       "title": "Drop us a line!"
@@ -104,6 +112,10 @@
     }
   },
   "odoo": {
+    "seo": {
+      "title": "Odoo Services",
+      "description": "Transform your business with Odoo, the comprehensive business management software that covers all your needs. From CRM to accounting, inventory, online marketing, sales, purchases, manufacturing, human resources, and more. Discover how Odoo can drive your company's growth and efficiency."
+    },
     "hero" : {
         "h1": "Welcome to",
         "h1_remark_word": "Odoo",

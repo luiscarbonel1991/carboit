@@ -7,14 +7,26 @@ import {getSiteMetadata} from "@/lib/utils";
 import {Metadata} from "next";
 import {contactPageKeywords} from "@/config/site-keywork";
 
-export const metadata = {
-    ...getSiteMetadata({
-        title: "Contact Us",
-        description: "Connect with Carboit today and elevate your business with cutting-edge tech solutions. Ready to turn your ideas into reality! Contact us now.",
-        keywords: [...contactPageKeywords]
-    }),
+export async function generateMetadata({params}: { params: { lang: Locale } }) {
 
-} as Metadata
+    const dictionary = await getDictionary(params.lang)
+    const { contact } = dictionary
+
+    return {
+        ...getSiteMetadata({
+            title: contact.seo.title,
+            description: contact.seo.description,
+            keywords: [...contactPageKeywords]
+        }),
+        alternates: {
+            canonical: '/en/contact',
+            languages: {
+                en: '/en/contact',
+                es: '/es/contact'
+            }
+        }
+    } as Metadata
+}
 
 interface ContactPageProps {
     params: { lang: Locale }
