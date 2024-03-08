@@ -47,16 +47,17 @@ const Technologies = ({dictionary}: TechnologiesProps) => {
                         {technologies.map((tech, index) => {
                             const Icon = tech.icon;
                             return (
-                                <Tooltip key={index}>
+                                <Tooltip key={`${index}-${tech.name}`}>
                                     <article className="flex flex-col items-center">
-                                        <TooltipTrigger>
-                                            <div>
+                                        <TooltipTrigger aria-label={tech.name}>
                                                 <Icon size={64}
+                                                      aria-label={`${tech.name} icon`}
                                                       className="hover:scale-105 transition hover:duration-300"/>
-                                            </div>
                                         </TooltipTrigger>
-                                        <TooltipContent side="bottom">
-                                            <span>{tech.name}</span>
+                                        <TooltipContent
+                                            aria-label={`${tech.name} tooltip`}
+                                            side="bottom">
+                                            <span aria-label={tech.name}>{tech.name}</span>
                                         </TooltipContent>
                                     </article>
                                 </Tooltip>
