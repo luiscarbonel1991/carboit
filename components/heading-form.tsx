@@ -29,15 +29,14 @@ export const HeadingForm = ({
             </p>
 
             <p className="mt-2 text-lg leading-8">
-                <Link href="tel:+15126320748"
+                <Link href="tel:+15126320948"
                 aria-label="Call us"
                 >
-                    <Phone className="inline-block h-6 w-6 mr-2"/> +1 512 632 0748
+                    <Phone className="inline-block h-6 w-6 mr-2"/> +1 (512) 632-0948
                 </Link>
             </p>
 
             <div className="mt-6 flex sm:flex-row gap-1">
-
                 <WhatsappButton />
                 <InstagramButton/>
                 <FacebookButton/>
