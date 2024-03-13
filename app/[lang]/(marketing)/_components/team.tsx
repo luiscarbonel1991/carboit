@@ -57,11 +57,12 @@ const TeamMember = ({name, role, imageUrl, socialMediaLinks}:
             <Image
                 src={imageUrl}
                 alt={`${name} Avatar`}
-                width={144} height={144}
-                className="mx-auto mb-4 rounded-md w-fit"
+                width={250} height={250}
+                className="mx-auto mb-4 rounded-md object-cover object-center"
+                loading={"lazy"}
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <Link href="#">{name}</Link>
+                {name}
             </h3>
             <p>{role}</p>
             <ul className="flex justify-center mt-4 space-x-4">
