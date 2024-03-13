@@ -1,7 +1,8 @@
 import Link from 'next/link'
-import {redirectPathURL} from "@/lib/utils";
+import {whatsappURL} from "@/lib/utils";
 import {Button} from "@/components/ui/button";
 import {getDictionary} from "@/lib/dictionary";
+import {Send} from "lucide-react";
 
 interface HeroProps {
     dictionary: Awaited<ReturnType<typeof getDictionary>>["odoo"]
@@ -28,16 +29,19 @@ export const Hero = ({dictionary}: HeroProps) => {
                 </p>
 
                 <div className="mt-10 flex items-center justify-center gap-x-6">
-                    <Button asChild variant="default"
-                            className="rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 scale-105 font-bold"
-                            size="lg">
-                        <Link
-                            href={redirectPathURL('en', '/contact')}
-                            aria-label="Let's Talk"
-                        >
-                            {hero.button_lets_talk}
-                        </Link>
-                    </Button>
+                    <Link
+                        href={whatsappURL()}
+                        aria-label="Let's Talk on WhatsApp"
+                    >
+                        <Button variant="default"
+                                aria-label="Let's Talk on WhatsApp"
+                                className="rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 scale-105 font-bold bg-gradient-to-r from-blue-600 to-purple-600"
+                                size="lg">
+
+                            {hero.button_lets_talk} <Send className="ml-2 h-6 w-6 animate-pulse"/>
+
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </section>

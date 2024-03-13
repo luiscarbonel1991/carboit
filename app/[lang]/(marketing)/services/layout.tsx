@@ -16,14 +16,12 @@ const ServiceLayout = async (
     const dictionary = await getDictionary(lang)
 
     return (
-        <>
-            <main className="grid grid-cols-1 gap-12">
-                {children}
-                <MaxWithWrapper className="grid grid-cols-1 space-y-32">
-                    <HeadingContactClean lang={lang} dictionary={dictionary.landing}/>
-                </MaxWithWrapper>
-            </main>
-        </>
+        <main className="grid grid-cols-1 gap-12">
+            {children}
+            <MaxWithWrapper className="grid grid-cols-1 space-y-32">
+                <HeadingContactClean lang={lang} dictionary={dictionary.landing}/>
+            </MaxWithWrapper>
+        </main>
     )
 }
 

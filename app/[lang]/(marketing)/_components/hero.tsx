@@ -1,11 +1,11 @@
 import Link from "next/link";
 import {Button} from "@/components/ui/button";
-import Image from "next/image";
 
 import {Poppins} from 'next/font/google';
 import {getDictionary} from "@/lib/dictionary";
 import {Locale} from "@/i18n-config";
-import {redirectPathURL} from "@/lib/utils";
+import {redirectPathURL, whatsappURL} from "@/lib/utils";
+import {Send} from "lucide-react";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -28,6 +28,7 @@ export const Hero = ({
         button_lets_talk,
         h1_remark_word,
         image_alt,
+        video,
         p_description
     } = dictionary.hero
 
@@ -38,14 +39,30 @@ export const Hero = ({
                 className={`isolate container grid lg:grid-cols-2 place-items-center pt-32 px-4 md:px-10 ${poppins.className}`}>
                 {/*<SvgBackground/>*/}
                 <div className="py-6 md:order-1 hidden md:block">
-                    <Image
+                    {/*<Image
                         src="/static/images/marketing/hero/hero_440x440.webp"
                         alt={image_alt}
                         height={440}
                         width={440}
                         priority={true}
                         className="rounded-2xl backdrop-sepia-0"
-                    />
+                    />*/}
+                    <Link href={redirectPathURL(lang, '/contact')}
+                          aria-label={announcement.question}
+                    >
+                        <video
+                            autoPlay={true}
+                            loop={true}
+                            muted={true}
+                            playsInline={true}
+                            className="aspect-square rounded-2xl"
+                            height={550}
+                            width={550}
+                            aria-label={video.alt}
+                        >
+                            <source src={video.source} type={video.type}/>
+                        </video>
+                    </Link>
                 </div>
 
                 <aside>
@@ -67,7 +84,7 @@ export const Hero = ({
                         {p_description}
                     </p>
                     <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                        <Button asChild variant="default"
+                        {/*<Button asChild variant="default"
                                 className="rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 scale-105 font-bold"
                                 size="lg">
                             <Link
@@ -76,7 +93,21 @@ export const Hero = ({
                             >
                                 {button_lets_talk}
                             </Link>
-                        </Button>
+                        </Button>*/}
+
+                        <Link
+                            href={whatsappURL()}
+                            aria-label="Let's Talk on WhatsApp"
+                        >
+                            <Button variant="default"
+                                    aria-label="Let's Talk on WhatsApp"
+                                    className="rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 scale-105 font-bold bg-gradient-to-r from-blue-600 to-purple-600"
+                                    size="lg">
+
+                                {button_lets_talk} <Send className="ml-2 h-6 w-6 animate-pulse"/>
+
+                            </Button>
+                        </Link>
                     </div>
                 </aside>
             </main>

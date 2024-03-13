@@ -94,3 +94,7 @@ export const redirectPathURL = (locale: Locale, pathname: string = "") => {
     }
     return segments.join("/");
 }
+
+export const whatsappURL = (phone: string = "15126320948", message: string = "Hello, I would interested in your services!") => {
+    return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+}

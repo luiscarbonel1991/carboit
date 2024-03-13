@@ -6,6 +6,11 @@
     },
     "hero": {
       "image_alt": "Personas trabajando en un sitio web",
+      "video": {
+        "source": "/static/videos/marketing/hero/have_an_idea-es.mp4",
+        "type": "video/mp4",
+        "alt": "Tienes una idea? Hablemos"
+      },
       "announcement": {
         "question": "¿Interesado en colaborar?",
         "contactus": "Contáctanos"

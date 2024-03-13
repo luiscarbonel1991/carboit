@@ -6,6 +6,11 @@
     },
     "hero": {
       "image_alt": "People working on a website",
+      "video":{
+        "source": "/static/videos/marketing/hero/have_an_idea-en.mp4",
+        "type": "video/mp4",
+        "alt": "Have an idea? Let's talk"
+      },
       "announcement": {
         "question": "Interested in collaborating?",
         "contactus": "Contact us"

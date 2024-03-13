@@ -1,11 +1,9 @@
 import SocialIcon from "@/components/social-icons";
 import {Button} from "@/components/ui/button";
-import Link from "next/link";
+import {whatsappURL} from "@/lib/utils";
 
-const baseUrl = "https://wa.me/15126320948"
-const message = "Hello, I would interested in your services!"
 const WhatsappButton = () => {
-    const url = `${baseUrl}?text=${encodeURIComponent(message)}`
+    const url = whatsappURL()
     return (
 
             <Button
