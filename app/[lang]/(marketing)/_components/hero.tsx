@@ -97,6 +97,7 @@ export const Hero = ({
 
                         <Link
                             href={whatsappURL()}
+                            target={"_blank"}
                             aria-label="Let's Talk on WhatsApp"
                         >
                             <Button variant="default"
