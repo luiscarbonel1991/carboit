@@ -99,6 +99,10 @@ export const whatsappURL = (phone: string = "15126320948", message: string = "He
     return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }
 
+export const instagramURL = (username: string = "carbo.it") => {
+    return `https://instagram.com/${username}`;
+}
+
 
 export function getLocalStorage(key: string, defaultValue: any) {
     const stickyValue = localStorage.getItem(key);

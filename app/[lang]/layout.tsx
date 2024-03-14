@@ -9,6 +9,7 @@ import {GoogleTagManager} from '@next/third-parties/google'
 import {thirdParties} from "@/config/site-metadata";
 import {getDictionary} from "@/lib/dictionary";
 import dynamic from "next/dynamic";
+import FloatingButtons from "@/components/floating-buttons";
 
 
 const CookieBanner = dynamic(() => import('@/components/cookie-banner'), {ssr: false})
@@ -49,6 +50,7 @@ export default function RootLayout({
         {children}
         <Toaster/>
         <CookieBanner/>
+        <FloatingButtons/>
         </body>
         <GoogleTagManager  gtmId={tagManager.id}/>
         </html>
