@@ -28,6 +28,7 @@ export default function CookieBanner() {
                 <p className="text-sm leading-6 text-gray-900">
                     We use cookies {" "}
                     <Link className="font-semibold text-[#8A2BE2]"
+                          aria-label="Learn more about cookies"
                           href="/cookie-policy">
                         Learn more
                     </Link>
