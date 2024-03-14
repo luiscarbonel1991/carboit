@@ -40,6 +40,7 @@ const Footer = ({lang}: FooterProps) => {
                                 <li>
                                     <Link
                                         href="https://www.facebook.com/profile.php?id=61556544511279"
+                                        aria-label="Facebook"
                                         target={"_blank"}
                                         className="hover:underline">
                                         Facebook
@@ -51,13 +52,17 @@ const Footer = ({lang}: FooterProps) => {
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                             <ul className="text-gray-600 dark:text-gray-400">
                                 <li className="mb-4">
-                                    <Link href="/privacy-policy" className="hover:underline">
+                                    <Link href="/privacy-policy"
+                                          aria-label="Privacy Policy"
+                                          className="hover:underline">
                                         Privacy Policy
                                     </Link>
                                 </li>
 
                                 <li>
-                                    <Link href="/cookie-policy" className="hover:underline">
+                                    <Link href="/cookie-policy"
+                                          aria-label="Cookies Policy"
+                                          className="hover:underline">
                                         Cookies Policy
                                     </Link>
                                 </li>
@@ -69,6 +74,7 @@ const Footer = ({lang}: FooterProps) => {
                 <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {new Date().getFullYear()} {` `}
                 <a
+                    aria-label="Carboit"
                     href="https://carboit.com" className="hover:underline">Carboit™</a>. All Rights Reserved.
             </span>
                     <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">

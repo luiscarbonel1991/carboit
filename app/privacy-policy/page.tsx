@@ -1,4 +1,5 @@
 import MaxWithWrapper from "@/components/max-with-wrapper";
+import Link from "next/link";
 
 
 const PrivacyPolicyPage = () => {
@@ -16,9 +17,11 @@ const PrivacyPolicyPage = () => {
                 <p className="mb-6">If you have additional questions or require more information about our Privacy
                     Policy, do not hesitate
                     to
-                    contact us. Our Privacy Policy was generated with the help of <a
+                    contact us. Our Privacy Policy was generated with the help of <Link
+                        aria-label="GDPR Privacy Policy Generator"
+                        target="_blank"
                         href="https://www.gdprprivacypolicy.net/">GDPR
-                        Privacy Policy Generator</a></p>
+                        Privacy Policy Generator</Link></p>
 
                 <h2 className="text-xl font-bold mt-6 mb-4">General Data Protection Regulation (GDPR)</h2>
                 <p className="mb-6">We are a Data Controller of your information.</p>

@@ -14,7 +14,9 @@ export default function CookiePolicy() {
                     understand what cookies are, how we use them, the types of cookies we use (i.e. the information we
                     collect using cookies) and how that information is used and how to control the cookie preferences.
                     For further information on how we use, store and keep your personal data secure, see our{" "}
-                    <Link href="/privacy-policy" className="text-[#8A2BE2] font-semibold">Privacy Policy</Link>.
+                    <Link href="/privacy-policy"
+                          aria-label={"Privacy Policy"}
+                          className="text-[#8A2BE2] font-semibold">Privacy Policy</Link>.
                 </p>
                 <p className="text-gray-700 mb-4">
                     You can at any time change or withdraw your consent from the Cookie Declaration on our website.
@@ -83,13 +85,14 @@ export default function CookiePolicy() {
                     by websites. You can change the settings of your browser to block/delete the cookies. To find out
                     more out more on how to manage and delete cookies, visit{" "}
                     <Link href="https://www.allaboutcookies.org"
+                          target={"_blank"}
                           aria-label="All About Cookies"
-                       className="text-[#8A2BE2] font-semibold">www.allaboutcookies.org</Link>.
+                          className="text-[#8A2BE2] font-semibold">www.allaboutcookies.org</Link>.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Privacy Policy for Carboit</h3>
                 <p className="text-gray-700 mb-4">
-                    At Carboit, accessible from https://carboit.com/, one of our main priorities is the privacy of our
+                    At Carboit, accessible from https://carboit.com, one of our main priorities is the privacy of our
                     visitors. This Privacy Policy document contains types of information that is collected and recorded
                     by Carboit and how we use it.
                 </p>
@@ -118,6 +121,7 @@ export default function CookiePolicy() {
                     removed from our systems, please contact us. Our Privacy Policy was generated with the help of {" "}
                     <Link href="https://www.gdprprivacypolicy.net/"
                           aria-label="GDPR Privacy Policy Generator"
+                          target={"_blank"}
                           className="text-[#8A2BE2] font-semibold">GDPR Privacy
                         Policy Generator</Link>.
                 </p>
