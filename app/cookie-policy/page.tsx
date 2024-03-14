@@ -21,7 +21,9 @@ export default function CookiePolicy() {
                 </p>
                 <p className="text-gray-700 mb-4">
                     Learn more about who we are, how you can contact us and how we process personal data in our{" "}
-                    <Link href="/privacy-policy" className="text-[#8A2BE2] font-semibold">Privacy Policy</Link>.
+                    <Link href="/privacy-policy"
+                          aria-label="Privacy Policy"
+                          className="text-[#8A2BE2] font-semibold">Privacy Policy</Link>.
                 </p>
                 <p className="text-gray-700 mb-4">
                     Your consent applies to the following domains: carboit.com
@@ -80,8 +82,9 @@ export default function CookiePolicy() {
                     In addition to this, different browsers provide different methods to block and delete cookies used
                     by websites. You can change the settings of your browser to block/delete the cookies. To find out
                     more out more on how to manage and delete cookies, visit{" "}
-                    <a href="https://www.allaboutcookies.org"
-                       className="text-[#8A2BE2] font-semibold">www.allaboutcookies.org</a>.
+                    <Link href="https://www.allaboutcookies.org"
+                          aria-label="All About Cookies"
+                       className="text-[#8A2BE2] font-semibold">www.allaboutcookies.org</Link>.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Privacy Policy for Carboit</h3>
@@ -113,8 +116,10 @@ export default function CookiePolicy() {
                     If you are a resident of the European Economic Area (EEA), you have certain data protection rights.
                     If you wish to be informed what Personal Information we hold about you and if you want it to be
                     removed from our systems, please contact us. Our Privacy Policy was generated with the help of {" "}
-                    <a href="https://www.gdprprivacypolicy.net/" className="text-[#8A2BE2] font-semibold">GDPR Privacy
-                        Policy Generator</a>.
+                    <Link href="https://www.gdprprivacypolicy.net/"
+                          aria-label="GDPR Privacy Policy Generator"
+                          className="text-[#8A2BE2] font-semibold">GDPR Privacy
+                        Policy Generator</Link>.
                 </p>
                 <p className="text-gray-700 mb-4">
                     In certain circumstances, you have the following data protection rights: The right to access,
