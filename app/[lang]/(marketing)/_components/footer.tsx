@@ -56,11 +56,11 @@ const Footer = ({lang}: FooterProps) => {
                                     </Link>
                                 </li>
 
-                                {/*<li>
-                                    <Link href="/privacy-policy" className="hover:underline">
-                                        Terms &amp; Conditions
+                                <li>
+                                    <Link href="/cookie-policy" className="hover:underline">
+                                        Cookies Policy
                                     </Link>
-                                </li>*/}
+                                </li>
                             </ul>
                         </div>
                     </div>

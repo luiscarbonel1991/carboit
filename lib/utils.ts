@@ -98,3 +98,18 @@ export const redirectPathURL = (locale: Locale, pathname: string = "") => {
 export const whatsappURL = (phone: string = "15126320948", message: string = "Hello, I would interested in your services!") => {
     return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }
+
+
+export function getLocalStorage(key: string, defaultValue: any) {
+    const stickyValue = localStorage.getItem(key);
+
+
+    return stickyValue !== null && stickyValue !== "undefined"
+        ? JSON.parse(stickyValue)
+        : defaultValue;
+}
+
+
+export function setLocalStorage(key: string, value: any) {
+    localStorage.setItem(key, JSON.stringify(value));
+}

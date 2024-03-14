@@ -144,6 +144,11 @@
         "description": "Gestiona tu inventario en tiempo real con varias funcionalidades como números de serie, lotes, embalaje, estrategias de almacenamiento, además puedes gestionar los envíos entrantes y salientes.",
         "button": "Hablemos de Inventario"
       }
+    },
+    "cookies": {
+      "shortDescription": "Usamos cookies para mejorar tu experiencia en nuestro sitio web.",
+      "link": "leer más",
+      "button": "Aceptar"
     }
   }
 }

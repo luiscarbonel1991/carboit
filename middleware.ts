@@ -24,7 +24,7 @@ function getLocale(request: NextRequest): string | undefined {
 export function middleware(request: NextRequest) {
     const pathname = request.nextUrl.pathname;
 
-    if(pathname.startsWith('/privacy-policy')) {
+    if(pathname.startsWith('/privacy-policy') || pathname.startsWith('/cookie-policy')) {
         return
     }
 

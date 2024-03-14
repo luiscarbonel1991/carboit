@@ -8,6 +8,7 @@ import {i18n, Locale} from "@/i18n-config";
 import {GoogleTagManager} from '@next/third-parties/google'
 import {thirdParties} from "@/config/site-metadata";
 import {getDictionary} from "@/lib/dictionary";
+import CookieBanner from "@/components/cookie-banner";
 
 const {tagManager} = thirdParties.google
 
@@ -33,7 +34,7 @@ interface RootLayoutProps {
 export default function RootLayout({
                                        children,
                                        params
-                                   }: Readonly<RootLayoutProps> ) {
+                                   }: Readonly<RootLayoutProps>) {
     return (
         <html lang={params.lang} className={"scroll-smooth"} suppressHydrationWarning>
         <body data-theme={"light"} className={
@@ -42,8 +43,9 @@ export default function RootLayout({
                 inter.className
             )
         }>
-            {children}
+        {children}
         <Toaster/>
+        <CookieBanner/>
         </body>
         <GoogleTagManager gtmId={tagManager.id}/>
         </html>

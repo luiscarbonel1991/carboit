@@ -1,6 +1,6 @@
 const cspHeader = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' www.googletagmanager.com googletagmanager.com www.google-analytics.com analytics.google.com;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' www.googletagmanager.com googletagmanager.com www.google-analytics.com analytics.google.com policy.app.cookieinformation.com;
     style-src 'self' 'unsafe-inline';
     img-src 'self' blob: data:;
     connect-src *;

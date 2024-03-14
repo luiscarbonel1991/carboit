@@ -6,7 +6,7 @@
     },
     "hero": {
       "image_alt": "People working on a website",
-      "video":{
+      "video": {
         "source": "/static/videos/marketing/hero/have_an_idea-en.mp4",
         "type": "video/mp4",
         "alt": "Have an idea? Let's talk"
@@ -40,8 +40,8 @@
           "description": "We understand the importance of a robust and personalized CMS. We step away from generic solutions to provide our clients with a unique system that powers efficient content management tailored to their needs."
         },
         "odoo": {
-            "title": "Odoo Services",
-            "description": "We are experts in Odoo, the comprehensive business management software that covers all your needs. From CRM to accounting, inventory, online marketing, sales, purchases, manufacturing, human resources, and more."
+          "title": "Odoo Services",
+          "description": "We are experts in Odoo, the comprehensive business management software that covers all your needs. From CRM to accounting, inventory, online marketing, sales, purchases, manufacturing, human resources, and more."
         }
       }
     },
@@ -75,7 +75,7 @@
       "follow_us": "Follow us"
     },
     "technologies": {
-      "title": "Platforms and Tools We Use" 
+      "title": "Platforms and Tools We Use"
     }
   },
   "nav": {
@@ -97,7 +97,7 @@
       "title": "Contact Us",
       "description": "Connect with Carboit today and elevate your business with cutting-edge tech solutions. Ready to turn your ideas into reality! Contact us now."
     },
-    "heading":  {
+    "heading": {
       "question": "Have an idea?",
       "title": "Drop us a line!"
     },
@@ -121,12 +121,12 @@
       "title": "Odoo Services",
       "description": "Transform your business with Odoo, the comprehensive business management software that covers all your needs. From CRM to accounting, inventory, online marketing, sales, purchases, manufacturing, human resources, and more. Discover how Odoo can drive your company's growth and efficiency."
     },
-    "hero" : {
-        "h1": "Welcome to",
-        "h1_remark_word": "Odoo",
-        "h1_rest": "Services",
-        "p_description": "Transform your business with Odoo, the comprehensive business management software that covers all your needs. From CRM to accounting, inventory, online marketing, sales, purchases, manufacturing, human resources, and more. Discover how Odoo can drive your company's growth and efficiency.",
-        "button_lets_talk": "Let's Talk"
+    "hero": {
+      "h1": "Welcome to",
+      "h1_remark_word": "Odoo",
+      "h1_rest": "Services",
+      "p_description": "Transform your business with Odoo, the comprehensive business management software that covers all your needs. From CRM to accounting, inventory, online marketing, sales, purchases, manufacturing, human resources, and more. Discover how Odoo can drive your company's growth and efficiency.",
+      "button_lets_talk": "Let's Talk"
     },
     "modules": {
       "sales": {
@@ -144,6 +144,11 @@
         "description": "Manage your inventory in real-time with various features such as serial numbers, lots, packaging, storage strategies, and manage incoming and outgoing shipments.",
         "button": "Let's Talk Inventory"
       }
+    },
+    "cookies": {
+      "shortDescription": "We use cookies to ensure you get the best experience on our website.",
+      "link": "learn more",
+      "button": "Accept"
     }
   }
 }
