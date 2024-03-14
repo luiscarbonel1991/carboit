@@ -8,7 +8,10 @@ import {i18n, Locale} from "@/i18n-config";
 import {GoogleTagManager} from '@next/third-parties/google'
 import {thirdParties} from "@/config/site-metadata";
 import {getDictionary} from "@/lib/dictionary";
-import CookieBanner from "@/components/cookie-banner";
+import dynamic from "next/dynamic";
+
+
+const CookieBanner = dynamic(() => import('@/components/cookie-banner'), {ssr: false})
 
 const {tagManager} = thirdParties.google
 
@@ -47,7 +50,7 @@ export default function RootLayout({
         <Toaster/>
         <CookieBanner/>
         </body>
-        <GoogleTagManager gtmId={tagManager.id}/>
+        <GoogleTagManager  gtmId={tagManager.id}/>
         </html>
     )
 }
@@ -69,7 +72,6 @@ export async function generateMetadata({params}: { params: { lang: Locale } }) {
             },
         }
     } as Metadata
-
 }
 
 

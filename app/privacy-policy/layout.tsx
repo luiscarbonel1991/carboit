@@ -4,7 +4,11 @@ import type {Metadata, Viewport} from "next";
 import '../globals.css'
 import Header from "@/app/[lang]/(marketing)/_components/header";
 import Footer from "@/app/[lang]/(marketing)/_components/footer";
-import CookieBanner from "@/components/cookie-banner";
+import dynamic from "next/dynamic";
+
+
+const CookieBanner = dynamic(() => import('@/components/cookie-banner'), {ssr: false})
+
 
 const inter = Inter({subsets: ['latin']})
 export const viewport: Viewport = {
@@ -33,7 +37,7 @@ export default function RootLayout({
             {children}
         </div>
         <Footer lang={"en"}/>
-        <CookieBanner />
+        <CookieBanner/>
         </body>
         </html>
     )
