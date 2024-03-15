@@ -12,7 +12,7 @@ const team = [
     {
         name: "Luis Carbonel",
         profile:
-            "/static/images/authors/luis.png",
+            "/static/images/authors/luis.webp",
         // "https://avatars.githubusercontent.com/u/95326684?v=4",    
         position: "Founder & Full Stack S. Engineer",
         socialMediaLinks: {
@@ -26,7 +26,7 @@ const team = [
     {
         name: "Ernesto Mato",
         profile:
-            "https://avatars.githubusercontent.com/u/52477910?v=4",
+            "/static/images/authors/ernesto.webp",
         position: "Software Engineer & Odoo Engineer",
         socialMediaLinks: {
             facebook: "",
