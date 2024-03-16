@@ -35,7 +35,7 @@ const OdooModules = ({dictionary, lang}: OdooModulesProps) => {
                 // @ts-ignore
                 const odooModule = dictionary.modules[section.id]
                 return (
-                    <div key={index}
+                    <div key={`odoo-module-${section.id}`}
                          className={cn(
                              "py-8 px-4 mx-auto max-w-screen-xl md:grid md:grid-cols-2",
                              "rounded-3xl shadow-lg dark:bg-gray-800 dark:shadow-none",
@@ -48,6 +48,7 @@ const OdooModules = ({dictionary, lang}: OdooModulesProps) => {
                                 width={500}
                                 height={500}
                                 className="rounded-3xl"
+                                priority={index === 0}
                             />
                         </figure>
                         <article className="md:col-span-1 mt-4" dir={"ltr"}>
@@ -57,6 +58,7 @@ const OdooModules = ({dictionary, lang}: OdooModulesProps) => {
                                   aria-label={`Let's Talk About ${odooModule.title}`}
                             >
                                 <Button variant="default"
+                                        aria-label={`Let's Talk About ${odooModule.title}`}
                                         className="rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 scale-105 font-bold">
                                     Let's Talk About {odooModule.title}
                                 </Button>
