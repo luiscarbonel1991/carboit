@@ -4,12 +4,12 @@ import '../globals.css'
 import {cn, getSiteMetadata} from '@/lib/utils'
 import {Toaster} from "@/components/ui/toaster"
 import {i18n, Locale} from "@/i18n-config";
-
-import {GoogleTagManager} from '@next/third-parties/google'
 import {thirdParties} from "@/config/site-metadata";
 import {getDictionary} from "@/lib/dictionary";
 import dynamic from "next/dynamic";
 import FloatingButtons from "@/components/floating-buttons";
+//import {GoogleTagManager} from "@next/third-parties/google";
+import Script from "next/script";
 
 
 const CookieBanner = dynamic(() => import('@/components/cookie-banner'), {ssr: false})
@@ -41,6 +41,17 @@ export default function RootLayout({
                                    }: Readonly<RootLayoutProps>) {
     return (
         <html lang={params.lang} className={"scroll-smooth"} suppressHydrationWarning>
+
+
+        <Script id="google-tag-manager" strategy="afterInteractive">
+            {`
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','${tagManager.id}');
+        `}
+        </Script>
         <body data-theme={"light"} className={
             cn(
                 "min-h-screen bg-background font-sans antialiased",
@@ -52,7 +63,7 @@ export default function RootLayout({
         <CookieBanner/>
         <FloatingButtons/>
         </body>
-        <GoogleTagManager  gtmId={tagManager.id}/>
+        {/*<GoogleTagManager  gtmId={tagManager.id}/>*/}
         </html>
     )
 }
