@@ -78,7 +78,7 @@ export async function generateMetadata({params}: { params: { lang: Locale } }) {
             description: seo.description,
         }),
         alternates: {
-            canonical: '/en',
+            canonical: '/',
             languages: {
                 en: '/en',
                 es: '/es',

@@ -44,7 +44,7 @@ export async function generateMetadata({params}: { params: { lang: Locale } }) {
             keywords: odooKeywords
         }),
         alternates: {
-            canonical: '/en/services/odoo',
+            canonical: '/services/odoo',
             languages: {
                 en: '/en/services/odoo',
                 es: '/es/services/odoo'

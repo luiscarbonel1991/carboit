@@ -19,7 +19,7 @@ export async function generateMetadata({params}: { params: { lang: Locale } }) {
             keywords: [...contactPageKeywords]
         }),
         alternates: {
-            canonical: '/en/contact',
+            canonical: '/contact',
             languages: {
                 en: '/en/contact',
                 es: '/es/contact'
