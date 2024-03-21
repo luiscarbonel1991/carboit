@@ -1,5 +1,3 @@
-"use server";
-
 import {siteMetadata} from "@/config/site-metadata";
 import {Feed, FeedOptions} from "feed";
 
