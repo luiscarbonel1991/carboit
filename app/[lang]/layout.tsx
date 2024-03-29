@@ -10,6 +10,8 @@ import dynamic from "next/dynamic";
 import FloatingButtons from "@/components/floating-buttons";
 //import {GoogleTagManager} from "@next/third-parties/google";
 import Script from "next/script";
+import FacebookPixelEvents from "@/components/facebook-pixel-events";
+import {Suspense} from "react";
 
 
 const CookieBanner = dynamic(() => import('@/components/cookie-banner'), {ssr: false})
@@ -62,6 +64,9 @@ export default function RootLayout({
         <Toaster/>
         <CookieBanner/>
         <FloatingButtons/>
+        <Suspense fallback={null}>
+            <FacebookPixelEvents/>
+        </Suspense>
         </body>
         {/*<GoogleTagManager  gtmId={tagManager.id}/>*/}
         </html>
