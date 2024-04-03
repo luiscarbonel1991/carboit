@@ -6,7 +6,7 @@ const robots = (): MetadataRoute.Robots => {
     return {
         rules: {
             userAgent: "*",
-            allow: "/",
+            allow: ["/", "/tr/", "/g/collect", "/gtag/js?id="],
         },
         sitemap: `${siteMetadata.siteUrl}/sitemap.xml`,
         host: siteMetadata.siteUrl,
