@@ -1,8 +1,8 @@
 const cspHeader = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' www.googletagmanager.com googletagmanager.com www.google-analytics.com analytics.google.com connect.facebook.net;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' www.googletagmanager.com googletagmanager.com www.google-analytics.com analytics.google.com connect.facebook.net www.facebook.com facebook.com;
     style-src 'self' 'unsafe-inline';
-    img-src 'self' blob: data:;
+    img-src 'self' blob: data: www.facebook.com;
     connect-src *;
     font-src 'self';
     object-src 'none';
@@ -67,6 +67,10 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'avatars.githubusercontent.com',
+            },
+            {
+                protocol: 'https',
+                hostname: 'www.facebook.com',
             },
         ]
     },

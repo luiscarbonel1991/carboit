@@ -49,6 +49,7 @@ const OdooModules = ({dictionary, lang}: OdooModulesProps) => {
                                 height={500}
                                 className="rounded-3xl"
                                 priority={index === 0}
+                                style={{ width: 'auto', height: 'auto' }}
                             />
                         </figure>
                         <article className="md:col-span-1 mt-4" dir={"ltr"}>
