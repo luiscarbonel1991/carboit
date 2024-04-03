@@ -19,6 +19,15 @@ const testimonials = [
         image:
             "/static/images/marketing/testimonials/taxipremium24h.webp",
         link: "https://taxipremium24hours.com",
+    },
+    {
+        name: "Lierly Roque Reyes",
+        position: "CEO y Director Ejecutivo - reyesgroupflorida.com",
+        quote:
+            "Quiero recomendar a Carboit por su excelente trabajo en la optimización de mi página web. Gracias a su ayuda, el rendimiento de la página mejoró significativamente, pasando de un puntaje de 31 a 90. Además, me ayudó a conectar de manera eficiente el píxel de Facebook. ¡Gracias por su excelente trabajo!",
+        image:
+            "/static/images/marketing/testimonials/reyesgroupflorida.webp",
+        link: "https://reyesgroupflorida.com",
     }
 ]
 const Testimonial = ({
@@ -46,20 +55,16 @@ const Testimonial = ({
                 orientation="horizontal"
                 opts={{
                     loop: true,
+                    align: "start",
                 }}
                 className={cn(
-                    testimonials.length > 1 ? "max-w-7xl mx-auto" : "max-w-3xl mx-auto"
+                    "max-w-7xl mx-auto"
                 )}
             >
-                <CarouselContent className="-ml-2 md:-ml-4">
+                <CarouselContent className="max-w-3xl">
                     {
                         testimonials.map((item, index) => (
-                            <CarouselItem key={index} className={
-                                cn(
-                                    "pl-2 md:pl-4",
-                                    testimonials.length > 1 ? "lg:basis-1/2" : ""
-                                )
-                            }>
+                            <CarouselItem key={index}>
                                 <figure
                                     className="grid grid-cols-[auto,1fr] items-center gap-x-4 gap-y-8 sm:grid-cols-12 sm:grid-rows-[1fr,auto,auto,1fr] sm:gap-x-10 lg:gap-x-16 my-32">
                                     <blockquote
@@ -106,14 +111,8 @@ const Testimonial = ({
                     }
 
                 </CarouselContent>
-                {
-                    testimonials.length > 1 && (
-                        <>
-                            <CarouselPrevious/>
-                            <CarouselNext/>
-                        </>
-                    )
-                }
+                <CarouselPrevious />
+                <CarouselNext />
             </Carousel>
         </section>
     )

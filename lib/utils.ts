@@ -2,7 +2,7 @@ import {type ClassValue, clsx} from "clsx"
 import {Metadata} from "next"
 import {twMerge} from "tailwind-merge"
 import {siteMetadata} from "@/config/site-metadata";
-import {Locale} from "@/i18n-config";
+import {i18n, Locale} from "@/i18n-config";
 
 export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs))
@@ -37,6 +37,7 @@ export const getSiteMetadata = ({
             type: 'website',
             locale: 'en_US',
             url: '/en',
+            alternateLocale: [...i18n.locales],
             site_name: siteMetadata.applicationName,
             images: [image],
             siteName: siteMetadata.applicationName,

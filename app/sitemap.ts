@@ -6,10 +6,6 @@ import {i18n} from "@/i18n-config";
 const sitemap = (): MetadataRoute.Sitemap => {
     const pages = ["", "contact", "services/odoo"];
     const languages = i18n.locales;
-    // const routes = pages.map((page) => ({
-    //     url: `${siteMetadata.siteUrl}/${page}`,
-    //     lastModified: new Date().toISOString().split('T')[0],
-    // }));
 
     const routes = pages.map((page) => {
         return languages.map((lang) => {

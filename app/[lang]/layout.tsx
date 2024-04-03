@@ -88,7 +88,8 @@ export async function generateMetadata({params}: { params: { lang: Locale } }) {
                 en: '/en',
                 es: '/es',
             },
-        }
+        },
+
     } as Metadata
 }
 
