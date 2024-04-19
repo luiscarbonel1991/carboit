@@ -1,18 +1,17 @@
-import {Locale} from "@/i18n-config";
-import {HeadingContactClean} from "@/app/[lang]/(marketing)/_components/heading-contact-clean";
+import {i18n} from "@/i18n-config";
 import {getDictionary} from "@/lib/dictionary";
 import MaxWithWrapper from "@/components/max-with-wrapper";
+import {HeadingContactClean} from "@/app/(marketing)/_components/heading-contact-clean";
 
 
 const ServiceLayout = async (
     {
         children,
-        params: {lang}
     }: {
         children: React.ReactNode,
-        params: { lang: Locale }
     }) => {
 
+    const lang = i18n.defaultLocale;
     const dictionary = await getDictionary(lang)
 
     return (

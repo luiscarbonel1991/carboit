@@ -1,15 +1,11 @@
 import Link from "next/link";
-import {Locale} from "@/i18n-config";
 import WhatsappButton from "@/components/whatsapp-button";
 import InstagramButton from "@/components/instagram-button";
 import FacebookButton from "@/components/facebook-button";
-import {Logo} from "@/app/[lang]/(marketing)/_components/logo";
+import {Logo} from "@/app/(marketing)/_components/logo";
 
-interface FooterProps {
-    lang: Locale
-}
 
-const Footer = ({lang}: FooterProps) => {
+const Footer = () => {
     return (
 
 
@@ -17,13 +13,7 @@ const Footer = ({lang}: FooterProps) => {
             <div className="container mx-auto max-w-screen-xl">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        {/*<Link href={redirectPathURL(lang, '/')} className="mr-6 flex items-center space-x-2">
-                            <Icons.logo className="h-6 w-6"/>
-                            <span className="font-bold sm:inline-block">
-                                {siteMetadata.applicationName}
-                             </span>
-                        </Link>*/}
-                        <Logo lang={lang}/>
+                        <Logo/>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
                         <div>

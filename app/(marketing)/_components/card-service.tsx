@@ -3,7 +3,6 @@ import {Button} from "@/components/ui/button";
 import {ReactNode} from "react";
 import Link from "next/link";
 import {Locale} from "@/i18n-config";
-import {redirectPathURL} from "@/lib/utils";
 
 interface CardServiceProps {
     locale: Locale
@@ -37,7 +36,7 @@ const CardService = ({
                 {
                     link && (
                         <Button asChild variant="secondary" size="sm" className="rounded-3xl">
-                            <Link href={redirectPathURL(locale, link)}
+                            <Link href={link}
                                   aria-label={locale === "en" ? `Learn more ${title}` : `Saber más ${title}`}
                             >
                                 {locale === "en" ? "Learn more" : "Saber más"} &rarr;

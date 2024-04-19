@@ -20,6 +20,9 @@ const FacebookPixelEvents = () => {
     const searchParams = useSearchParams();
 
     useEffect(() => {
+
+        console.log("FacebookPixelEvents", pathname, searchParams);
+
         import('react-facebook-pixel')
             .then(module => module.default)
             .then(ReactPixel => {

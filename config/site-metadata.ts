@@ -27,11 +27,13 @@ export interface SiteMetadata extends Metadata {
         template: string;
     };
     description: string;
+    language: string;
     siteUrl: string;
     ogImage: string;
     socialBanner: string;
     keywords: string[];
     authors: Author[];
+    videos?: string[];
 }
 
 const siteUrl = 'https://carboit.com';
@@ -67,6 +69,7 @@ export const siteMetadata = {
     keywords: keywords,
     authors: siteAuthors,
     theme: 'light',
+    language: "en-us",
     themes: [
         {
             name: 'light',
@@ -76,5 +79,6 @@ export const siteMetadata = {
             name: 'dark',
             theme: 'dark'
         }
-    ]
+    ],
+    videos: [`${siteUrl}/static/videos/marketing/hero/have_an_idea-en.mp4`]
 } as SiteMetadata;

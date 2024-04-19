@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {cn, redirectPathURL} from "@/lib/utils";
+import {cn} from "@/lib/utils";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
 import {getDictionary} from "@/lib/dictionary";
@@ -55,7 +55,7 @@ const OdooModules = ({dictionary, lang}: OdooModulesProps) => {
                         <article className="md:col-span-1 mt-4" dir={"ltr"}>
                             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{odooModule.title}</h2>
                             <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">{odooModule.description}</p>
-                            <Link href={redirectPathURL(lang,"/contact")}
+                            <Link href={"/contact"}
                                   aria-label={`Let's Talk About ${odooModule.title}`}
                             >
                                 <Button variant="default"

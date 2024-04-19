@@ -4,7 +4,7 @@ import {Button} from "@/components/ui/button";
 import {Poppins} from 'next/font/google';
 import {getDictionary} from "@/lib/dictionary";
 import {Locale} from "@/i18n-config";
-import {redirectPathURL, whatsappURL} from "@/lib/utils";
+import {whatsappURL} from "@/lib/utils";
 import {Send} from "lucide-react";
 
 const poppins = Poppins({
@@ -36,7 +36,7 @@ export const Hero = ({
 
         <>
             <main
-                className={`isolate container grid lg:grid-cols-2 place-items-center pt-32 px-4 md:px-10 ${poppins.className}`}>
+                className={`isolate container grid lg:grid-cols-2 place-items-center pt-20  px-4 md:px-10 ${poppins.className}`}>
                 {/*<SvgBackground/>*/}
                 <div className="py-6 md:order-1 hidden md:block">
                     {/*<Image
@@ -47,7 +47,7 @@ export const Hero = ({
                         priority={true}
                         className="rounded-2xl backdrop-sepia-0"
                     />*/}
-                    <Link href={redirectPathURL(lang, '/contact')}
+                    <Link href={ '/contact'}
                           aria-label={announcement.question}
                     >
                         <video
@@ -70,7 +70,7 @@ export const Hero = ({
                         <div
                             className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                             {announcement.question} {' '}
-                            <Link href={redirectPathURL(lang, '/contact')} className="font-semibold text-indigo-600">
+                            <Link href={'/contact'} className="font-semibold text-indigo-600">
                                 <span className="absolute inset-0" aria-hidden="true"/>
                                 {announcement.contactus} <span aria-hidden="true">&rarr;</span>
                             </Link>

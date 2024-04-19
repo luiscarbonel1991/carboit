@@ -1,9 +1,8 @@
 import {AreaChart, Braces, Terminal} from "lucide-react";
 import {Button} from "@/components/ui/button";
-import CardService from "@/app/[lang]/(marketing)/_components/card-service";
+import CardService from "@/app/(marketing)/_components/card-service";
 import {getDictionary} from "@/lib/dictionary";
 import {Locale} from "@/i18n-config";
-import {redirectPathURL} from "@/lib/utils";
 import Link from "next/link";
 
 
@@ -68,7 +67,7 @@ export const ServicesSection = ({
                     <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
                         {servicesDic.p_description}
                     </p>
-                    <Link href={redirectPathURL(lang, '/contact')}>
+                    <Link href={'/contact'}>
                         <Button
                             className={"rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 scale-105 font-bold"}
                             variant={"default"} size={"lg"}>

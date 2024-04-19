@@ -8,7 +8,6 @@ import FacebookButton from "@/components/facebook-button";
 import WhatsappButton from "@/components/whatsapp-button";
 import InstagramButton from "@/components/instagram-button";
 import {Locale} from "@/i18n-config";
-import {redirectPathURL} from "@/lib/utils";
 
 interface HeadingContactCleanProps {
     lang: Locale;
@@ -37,7 +36,7 @@ export const HeadingContactClean = ({
                             <div className="mt-6 flex">
                                 <Link
                                     className="inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition bg-white text-neutral-950 hover:bg-neutral-200"
-                                    href={redirectPathURL(lang, '/contact')}>
+                                    href={'/contact'}>
                                     <span className="relative top-px">{headingContactDic.button_to_contact}</span>
                                 </Link>
                             </div>
