@@ -2,7 +2,8 @@ import {type ClassValue, clsx} from "clsx"
 import {Metadata} from "next"
 import {twMerge} from "tailwind-merge"
 import {siteMetadata} from "@/config/site-metadata";
-import {i18n, Locale} from "@/i18n-config";
+import {Locale} from "@/i18n-config";
+
 
 export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs))
@@ -19,13 +20,21 @@ interface SEOProps {
     [key: string]: any
 }
 
+const defaultSEO: SEOProps = {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    keywords: siteMetadata.keywords,
+    image: siteMetadata.socialBanner,
+}
+
 export const getSiteMetadata = ({
                                     title = siteMetadata.title,
                                     description = siteMetadata.description,
                                     keywords = siteMetadata.keywords,
                                     image = siteMetadata.socialBanner,
                                     ...rest
-                                }: SEOProps) => {
+                                }: SEOProps = defaultSEO
+) => {
     const metadata = {
         ...siteMetadata,
         title,
@@ -36,12 +45,12 @@ export const getSiteMetadata = ({
         openGraph: {
             type: 'website',
             locale: 'en_US',
-            url: '/en',
-            alternateLocale: [...i18n.locales],
+            url: './',
             site_name: siteMetadata.applicationName,
             images: [image],
             siteName: siteMetadata.applicationName,
             title: title,
+            videos: siteMetadata.videos ? siteMetadata.videos.map((video) => ({url: video})) : undefined,
         },
         twitter: {
             title: title,
@@ -66,6 +75,12 @@ export const getSiteMetadata = ({
                     sizes: "512x512",
                 }
             ]
+        },
+        alternates: {
+            canonical: './',
+            types: {
+                'application/rss+xml': `${siteMetadata.siteUrl}/feed.xml`,
+            },
         },
         robots: {
             index: true,

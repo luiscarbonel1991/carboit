@@ -4,14 +4,13 @@ import {redirectPathURL} from "@/lib/utils";
 import Image from "next/image";
 
 interface LogoProps {
-    lang: Locale
     width?: number
     height?: number
 }
 
-export const Logo = ({lang, width = 125, height = 50}: LogoProps) => {
+export const Logo = ({width = 125, height = 50}: LogoProps) => {
     return (
-        <Link href={redirectPathURL(lang)} className="flex w-full">
+        <Link href={'/'} className="flex w-full">
            {/* <Icons.logo className="h-6 w-6"/>
             <span className="text-lg font-bold sm:inline-block">
                 {siteMetadata.applicationName}

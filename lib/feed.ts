@@ -28,5 +28,6 @@ export const generateRssFeed =  () => {
     } as FeedOptions);
 
     feed.addCategory("Technology");
+
     return feed;
 }

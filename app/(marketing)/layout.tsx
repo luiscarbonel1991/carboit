@@ -1,23 +1,23 @@
 import Footer from "./_components/footer"
 import Header from "./_components/header"
-import {Locale} from "@/i18n-config";
+import {i18n} from "@/i18n-config";
 
 
 const MarketingLayout = ({
-                             children,
-                             params
+                             children
                          }: {
     children: React.ReactNode,
-    params: { lang: Locale }
 }) => {
+
+    const lang = i18n.defaultLocale;
+
     return (
         <div className="relative flex min-h-screen flex-col bg-background">
-            <Header lang={params.lang}/>
+            <Header lang={lang}/>
 
             <main className="flex-1 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
                 {children}
             </main>
-            <Footer lang={params.lang}/>
         </div>
     )
 }

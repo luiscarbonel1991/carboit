@@ -1,15 +1,16 @@
 import {HeadingForm} from "@/components/heading-form";
 import SvgBackground from "@/components/svg-background";
-import {ContactForm} from "@/app/[lang]/(marketing)/contact/contact-form";
-import {Locale} from "@/i18n-config";
+import {i18n, Locale} from "@/i18n-config";
 import {getDictionary} from "@/lib/dictionary";
 import {getSiteMetadata} from "@/lib/utils";
 import {Metadata} from "next";
 import {contactPageKeywords} from "@/config/site-keywork";
+import {ContactForm} from "@/app/(marketing)/contact/contact-form";
 
-export async function generateMetadata({params}: { params: { lang: Locale } }) {
+export async function generateMetadata() {
 
-    const dictionary = await getDictionary(params.lang)
+    const lang = i18n.defaultLocale;
+    const dictionary = await getDictionary(lang)
     const { contact } = dictionary
 
     return {
@@ -18,13 +19,6 @@ export async function generateMetadata({params}: { params: { lang: Locale } }) {
             description: contact.seo.description,
             keywords: [...contactPageKeywords]
         }),
-        alternates: {
-            canonical: '/contact',
-            languages: {
-                en: '/en/contact',
-                es: '/es/contact'
-            }
-        }
     } as Metadata
 }
 

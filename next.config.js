@@ -81,7 +81,7 @@ const nextConfig = {
                 headers: securityHeaders,
             }
         ]
-    }
+    },
 }
 
 module.exports = withBundleAnalyzer(nextConfig)
