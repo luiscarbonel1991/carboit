@@ -12,7 +12,8 @@ const caseStudies = [
         description: "DevLach is a blog designed to be a showcase of the latest technologies and trends in the world of web development. It is built using the latest technologies such as Next.js, TailwindCSS.",
         image: "/static/images/marketing/study-case-devlach.png",
         url: "https://devlach.com",
-        type: "Website"
+        type: "Website",
+        date: "2023-01-01"
     },
     {
         id: "taxi",
@@ -20,7 +21,17 @@ const caseStudies = [
         description: "TaxiPremium24hours showcases a 24-hour taxi service via a user-friendly website built with WordPress CMS, featuring responsive design and SEO optimization for enhanced visibility and performance.",
         image: "/static/images/marketing/study-case-taxipremium24hours.png",
         url: "https://taxipremium24hours.com",
-        type: "Website"
+        type: "Website",
+        date: "2023-12-31"
+    },
+    {
+        id: "dacostaupholstery",
+        title: "D'Acosta Upholstery",
+        description: "D'Acosta Upholstery is a furniture restoration company that offers a range of services. The website was built using WordPress, featuring a user-friendly design and SEO optimization.",
+        image: "/static/images/study-case/dacostaupholstery-600x600.webp",
+        url: "https://dacostaupholstery.com",
+        type: "Website",
+        date: "2024-04-14"
     }
 ]
 
@@ -34,6 +45,8 @@ export const StudyCase = ({
 
     const studyCaseDict = dictionary.studyCases
     const studyCaseDictData = studyCaseDict.data
+
+    const orderedCaseStudies = caseStudies.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     return (
 
         <section className="flex flex-col items-center space-y-8 md:space-y-12">
@@ -51,7 +64,7 @@ export const StudyCase = ({
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
 
                 {
-                    caseStudies.map((caseStudy, index) => {
+                    orderedCaseStudies.map((caseStudy, index) => {
 
                         // @ts-ignore
                         const caseStudyData = studyCaseDictData[caseStudy.id] || caseStudy

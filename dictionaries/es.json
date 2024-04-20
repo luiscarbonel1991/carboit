@@ -66,6 +66,11 @@
           "title": "TaxiPremium24hours",
           "description": "TaxiPremium24hours presenta un servicio de taxi disponible las 24 horas a través de un sitio web amigable para el usuario, construido con WordPress CMS y que incluye diseño responsivo y optimización SEO para mejorar la visibilidad y el rendimiento.",
           "category": "Sitio Web"
+        },
+        "dacostaupholstery": {
+          "title": "D'Acosta Upholstery",
+          "description": "D'Acosta Upholstery es un sitio web que muestra los servicios y el portafolio de la empresa. Está construido utilizando WordPress CMS, con un diseño responsivo y optimización SEO.",
+          "category": "Website"
         }
       }
     },

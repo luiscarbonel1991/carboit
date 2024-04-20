@@ -28,6 +28,14 @@ const testimonials = [
         image:
             "/static/images/marketing/testimonials/reyesgroupflorida.webp",
         link: "https://reyesgroupflorida.com",
+    }, {
+        name: "Domingo Acosta",
+        position: "CEO - dacostaupholstery.com",
+        quote:
+            "Estamos encantados con el trabajo de Carboit. Nos ayudaron a crear una página web impresionante, mejorar nuestro SEO y diseñar un logo excepcional. Recomendamos encarecidamente sus servicios a cualquier empresa que busque destacarse en línea. ¡Gracias por todo!",
+        image:
+            "/static/images/marketing/testimonials/dacostaupholstery.webp",
+        link: "https://dacostaupholstery.com",
     }
 ]
 const Testimonial = ({
@@ -56,6 +64,7 @@ const Testimonial = ({
                 opts={{
                     loop: true,
                     align: "start",
+                    startIndex: testimonials.length - 1,
                 }}
                 className={cn(
                     "max-w-7xl mx-auto"
