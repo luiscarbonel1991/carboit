@@ -35,8 +35,6 @@ export default function RootLayout({
     return (
         <html lang={siteMetadata.language} className={"scroll-smooth"} suppressHydrationWarning>
 
-        <GoogleTagManager gtmId={tagManager.id}/>
-
         <Script
             id="facebook-pixel"
             async={true}
@@ -69,6 +67,7 @@ export default function RootLayout({
         <FloatingButtons/>
         <Footer/>
         </body>
+        <GoogleTagManager gtmId={tagManager.id}/>
         </html>
     )
 }

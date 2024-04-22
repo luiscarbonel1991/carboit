@@ -47,7 +47,7 @@ const Testimonial = ({
     const {heading, description} = dictionary.testimonials;
     return (
         <section
-            className="flex flex-col items-center">
+            className="flex flex-col items-center overflow-x-hidden">
             <header
                 className="flex flex-col items-center justify-center">
                 <h2>
@@ -120,8 +120,8 @@ const Testimonial = ({
                     }
 
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious/>
+                <CarouselNext/>
             </Carousel>
         </section>
     )
