@@ -14,6 +14,7 @@ import {
 
 import {FaJava} from "react-icons/fa6";
 import {getDictionary} from "@/lib/dictionary";
+import {cn} from "@/lib/utils";
 
 const technologies = [
     {name: "Next.js", icon: SiNextdotjs},
@@ -39,33 +40,59 @@ const Technologies = ({dictionary}: TechnologiesProps) => {
     return (
         <MaxWithWrapper className="flex flex-col justify-center gap-8">
             <header>
-                <h2 className="text-2xl font-extralight text-center">{title}</h2>
+                <h2 className="text-3xl font-extralight text-center">{title}</h2>
             </header>
-            <main className="flex flex-wrap justify-center w-full">
-                <TooltipProvider>
-                    <div className="grid md:grid-cols-9 grid-cols-3 gap-4 w-full">
-                        {technologies.map((tech, index) => {
-                            const Icon = tech.icon;
-                            return (
-                                <Tooltip key={`${index}-${tech.name}`}>
-                                    <article className="flex flex-col items-center">
-                                        <TooltipTrigger aria-label={tech.name}>
-                                                <Icon size={64}
-                                                      aria-label={`${tech.name} icon`}
-                                                      className="hover:scale-105 transition hover:duration-300"/>
-                                        </TooltipTrigger>
-                                        <TooltipContent
-                                            aria-label={`${tech.name} tooltip`}
-                                            side="bottom">
-                                            <span aria-label={tech.name}>{tech.name}</span>
-                                        </TooltipContent>
-                                    </article>
-                                </Tooltip>
-                            );
-                        })}
-                    </div>
-                </TooltipProvider>
-            </main>
+                   <main className={
+                       cn(
+                           "relative flex space-x-8 items-center overflow-x-hidden rounded-3xl border border-black shadow-xl" ,
+                           "bg-gradient-to-b from-zinc-900 to-zinc-800"
+                       )
+                   }>
+                       <div className="py-4 animate-marquee whitespace-nowrap bg-gradient-to-b from-zinc-900 to-zinc-800">
+                           <TooltipProvider>
+                               <div className="flex gap-8 w-full bg-gradient-to-b from-zinc-900 to-zinc-800">
+                                   {technologies.map((tech, index) => {
+                                       const Icon = tech.icon;
+                                       return (
+                                           <Tooltip key={`${index}-${tech.name}`}>
+                                               <article className="flex flex-col items-center">
+                                                   <TooltipTrigger aria-label={tech.name}>
+                                                       <Icon size={64} fill="white"
+                                                             aria-label={`${tech.name} icon`}/>
+                                                   </TooltipTrigger>
+                                                   <TooltipContent aria-label={`${tech.name} tooltip`} side="right">
+                                                       <span aria-label={tech.name}>{tech.name}</span>
+                                                   </TooltipContent>
+                                               </article>
+                                           </Tooltip>
+                                       );
+                                   })}
+                               </div>
+                           </TooltipProvider>
+                       </div>
+                       <div className="absolute top-0 py-4 animate-marquee2 whitespace-nowrap bg-gradient-to-b from-zinc-900 to-zinc-800">
+                           <TooltipProvider>
+                               <div className="flex gap-8 w-full bg-gradient-to-b from-zinc-900 to-zinc-800">
+                                   {technologies.map((tech, index) => {
+                                       const Icon = tech.icon;
+                                       return (
+                                           <Tooltip key={`${index}-${tech.name}`}>
+                                               <article className="flex flex-col items-center">
+                                                   <TooltipTrigger aria-label={tech.name}>
+                                                       <Icon size={64} fill="white"
+                                                             aria-label={`${tech.name} icon`}/>
+                                                   </TooltipTrigger>
+                                                   <TooltipContent aria-label={`${tech.name} tooltip`} side="right">
+                                                       <span aria-label={tech.name}>{tech.name}</span>
+                                                   </TooltipContent>
+                                               </article>
+                                           </Tooltip>
+                                       );
+                                   })}
+                               </div>
+                           </TooltipProvider>
+                       </div>
+                   </main>
         </MaxWithWrapper>
     );
 }
