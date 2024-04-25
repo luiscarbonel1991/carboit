@@ -35,7 +35,9 @@ export default function RootLayout({
     return (
         <html lang={siteMetadata.language} className={"scroll-smooth"} suppressHydrationWarning>
 
-        <Script
+        {/*
+           // Facebook Pixel
+            <Script
             id="facebook-pixel"
             async={true}
             strategy="afterInteractive"
@@ -54,7 +56,7 @@ export default function RootLayout({
           `,
             }}
         />
-
+*/}
         <body data-theme={"light"} className={
             cn(
                 "min-h-screen bg-background font-sans antialiased",

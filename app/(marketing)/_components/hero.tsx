@@ -38,7 +38,7 @@ export const Hero = ({
             <main
                 className={`isolate container grid lg:grid-cols-2 place-items-center pt-20  px-4 md:px-10 ${poppins.className}`}>
                 {/*<SvgBackground/>*/}
-                <div className="py-6 md:order-1 hidden md:block">
+                <div className="py-6 md:order-1 md:block">
                     {/*<Image
                         src="/static/images/marketing/hero/hero_440x440.webp"
                         alt={image_alt}
