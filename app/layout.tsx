@@ -69,7 +69,7 @@ export default function RootLayout({
         <FloatingButtons/>
         <Footer/>
         </body>
-        <GoogleTagManager gtmId={tagManager.id}/>
+        {/*<GoogleTagManager gtmId={tagManager.id}/>*/}
         </html>
     )
 }
