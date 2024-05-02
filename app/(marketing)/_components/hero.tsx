@@ -5,7 +5,7 @@ import {Poppins} from 'next/font/google';
 import {getDictionary} from "@/lib/dictionary";
 import {Locale} from "@/i18n-config";
 import {whatsappURL} from "@/lib/utils";
-import {Send} from "lucide-react";
+import {Dot, Send} from "lucide-react";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -47,7 +47,7 @@ export const Hero = ({
                         priority={true}
                         className="rounded-2xl backdrop-sepia-0"
                     />*/}
-                    <Link href={ '/contact'}
+                    <Link href={'/contact'}
                           aria-label={announcement.question}
                     >
                         <video
@@ -83,18 +83,7 @@ export const Hero = ({
                     <p className="mt-6 text-xl text-gray-600 dark:text-gray-400">
                         {p_description}
                     </p>
-                    <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                        {/*<Button asChild variant="default"
-                                className="rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 scale-105 font-bold"
-                                size="lg">
-                            <Link
-                                href={redirectPathURL(lang, '/contact')}
-                                aria-label="Let's Talk"
-                            >
-                                {button_lets_talk}
-                            </Link>
-                        </Button>*/}
-
+                    <div className="mt-6 flex flex-row gap-3">
                         <Link
                             href={whatsappURL()}
                             target={"_blank"}
@@ -107,6 +96,28 @@ export const Hero = ({
 
                                 {button_lets_talk} <Send className="ml-2 h-6 w-6 animate-pulse"/>
 
+                            </Button>
+                        </Link>
+
+                        <Link
+                            href={whatsappURL()}
+                            target={"_blank"}
+                            aria-label="Let's Talk on WhatsApp"
+                        >
+                            <Button variant="link"
+                                    aria-label="Available Now on WhatsApp"
+                                    size="lg">
+
+                                <div className="flex flex-row gap-4">
+                                    <div className="relative flex flex-col items-center justify-center">
+                                        <Dot className="absolute h-16 w-16 animate-magnetic-pulse text-green-500"/>
+                                        <Dot className="absolute h-16 w-16 animate-magnetic-wave text-green-600"/>
+                                    </div>
+
+                                    <span className="text-sm text-gray-600">
+                                      Available now
+                                    </span>
+                                </div>
                             </Button>
                         </Link>
                     </div>

@@ -69,9 +69,9 @@ export const ServicesSection = ({
                     </p>
                     <Link href={'/contact'}>
                         <Button
-                            className={"rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 scale-105 font-bold"}
+                            className={"rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 scale-105 font-bold bg-gradient-to-r from-blue-600 to-purple-600"}
                             variant={"default"} size={"lg"}>
-                            {servicesDic.button} &rarr;
+                            {servicesDic.button}
                         </Button>
                     </Link>
                 </div>
@@ -88,7 +88,7 @@ export const ServicesSection = ({
                                 <CardService
                                     locale={lang}
                                     key={index}
-                                    cardClassName="shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out min-h-[375px]"
+                                    cardClassName="shadow-md hover:shadow-lg hover:bg-zinc-100 transition-shadow duration-300 ease-in-out min-h-[375px]"
                                     title={serviceDic.title}
                                     description={serviceDic.description}
                                     headerContent={service.icon}

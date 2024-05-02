@@ -75,12 +75,28 @@ const config = {
                     '0%': { transform: 'translateX(100%)' },
                     '100%': { transform: 'translateX(0%)' },
                 },
+                "ping2": {
+                    '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+                    '50%': { transform: 'scale(2)', opacity: '0.5' },
+                },
+                "magnetic-pulse":{
+                    '0%': { transform: 'scale(1)', opacity: '1' },
+                    '50%': { transform: 'scale(1.3)', opacity: '0.9' },
+                    '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                "magnetic-wave": {
+                    '0%': { transform: 'scale(1)', opacity: '0.5' },
+                    '100%': { transform: 'scale(3)', opacity: '0' },
+                }
             },
             animation: {
                 "accordion-down": "accordion-down 0.2s ease-out",
                 "accordion-up": "accordion-up 0.2s ease-out",
                 "marquee": "marquee 25s linear infinite",
-                marquee2: "marquee2 25s linear infinite",
+                "marquee2": "marquee2 25s linear infinite",
+                "ping2": "ping2 2s cubic-bezier(0, 0, 0.2, 1) infinite",
+                'magnetic-pulse': 'magnetic-pulse 2s cubic-bezier(0, 0, 0.2, 1) infinite',
+                'magnetic-wave': 'magnetic-wave 2s cubic-bezier(0, 0, 0.2, 1) infinite'
             },
         },
     },

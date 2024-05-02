@@ -44,13 +44,15 @@ const Technologies = ({dictionary}: TechnologiesProps) => {
             </header>
                    <main className={
                        cn(
-                           "relative flex space-x-8 items-center overflow-x-hidden rounded-3xl border border-black shadow-xl" ,
-                           "bg-gradient-to-b from-zinc-900 to-zinc-800"
+                           "relative flex space-x-8 items-center overflow-x-hidden",
+                           "rounded-full shadow-2xl",
+                           "border-4 border-zinc-600 border-b-0",
+                           "bg-gradient-to-b from-black to-zinc-800"
                        )
                    }>
-                       <div className="py-4 animate-marquee whitespace-nowrap bg-gradient-to-b from-zinc-900 to-zinc-800">
+                       <div className="py-4 animate-marquee whitespace-nowrap bg-gradient-to-b from-black to-zinc-800">
                            <TooltipProvider>
-                               <div className="flex gap-8 w-full bg-gradient-to-b from-zinc-900 to-zinc-800">
+                               <div className="flex gap-8 w-full">
                                    {technologies.map((tech, index) => {
                                        const Icon = tech.icon;
                                        return (
@@ -70,9 +72,9 @@ const Technologies = ({dictionary}: TechnologiesProps) => {
                                </div>
                            </TooltipProvider>
                        </div>
-                       <div className="absolute top-0 py-4 animate-marquee2 whitespace-nowrap bg-gradient-to-b from-zinc-900 to-zinc-800">
+                       <div className="absolute top-0 py-4 animate-marquee2 whitespace-nowrap">
                            <TooltipProvider>
-                               <div className="flex gap-8 w-full bg-gradient-to-b from-zinc-900 to-zinc-800">
+                               <div className="flex gap-8 w-full ">
                                    {technologies.map((tech, index) => {
                                        const Icon = tech.icon;
                                        return (
