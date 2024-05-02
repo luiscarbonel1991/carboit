@@ -8,6 +8,8 @@ import {getNavConfig} from "@/config/nav-config";
 import {ScrollArea} from "./ui/scroll-area";
 import {siteMetadata} from "@/config/site-metadata";
 import { Icons } from "./icons";
+import {Logo} from "@/app/(marketing)/_components/logo";
+import {cn} from "@/lib/utils";
 
 export const MobileNav = () => {
 
@@ -53,15 +55,19 @@ export const MobileNav = () => {
                     <span className="sr-only">Toggle Menu</span>
                 </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full max-w-[90vw] md:max-w-[400px]">
-
+            <SheetContent side="right" className={
+                cn(
+                    "bg-background/85",
+                    "w-full max-w-[90vw] md:max-w-[400px]",
+                    "transition-transform duration-300 ease-in-out",
+                )
+            }>
                 <MobileLink
                     href="/"
                     className="flex items-center"
                     onOpenChange={setIsOpen}
                 >
-                    <Icons.logo className="mr-2 h-4 w-4"/>
-                    <span className="font-bold">{siteMetadata.applicationName}</span>
+                    <Logo width={100} height={100}/>
                 </MobileLink>
 
 

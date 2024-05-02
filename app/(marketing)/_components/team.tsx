@@ -53,11 +53,12 @@ const TeamMember = ({name, role, imageUrl, socialMediaLinks}:
 
                         }) => {
     return (
-        <Card className="text-center text-gray-500 dark:text-gray-400 p-4 hover:shadow-lg">
+        <Card className="text-center text-gray-500 dark:text-gray-400 p-4 hover:shadow-lg hover:bg-zinc-100">
             <Image
                 src={imageUrl}
                 alt={`${name} Avatar`}
                 width={250} height={250}
+                quality={100}
                 className="mx-auto mb-4 rounded-md object-cover object-center"
                 loading={"lazy"}
             />
@@ -111,7 +112,7 @@ const Team = ({
         <section className="bg-white dark:bg-gray-900">
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:px-6">
                 <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-                    <h2 className="mb-4 text-5xl tracking-tight font-bold text-gray-900 dark:text-white">
+                    <h2 className="mb-4 text-4xl font-medium sm:text-5xl text-gray-900 dark:text-white">
                         {teamDic.title}</h2>
                     <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
                         {teamDic.description}
