@@ -68,9 +68,14 @@
           "category": "Website"
         },
         "dacostaupholstery": {
-            "title": "D'Acosta Upholstery",
-            "description": "D'Acosta Upholstery is a website that showcases the company's services and portfolio. It is built using WordPress CMS, featuring a responsive design and SEO optimization.",
-            "category": "Website"
+          "title": "D'Acosta Upholstery",
+          "description": "D'Acosta Upholstery is a website that showcases the company's services and portfolio. It is built using WordPress CMS, featuring a responsive design and SEO optimization.",
+          "category": "Website"
+        },
+        "luzsalonbelleza": {
+          "title": "Luz Salón Belleza",
+          "description": "Luz Salón Belleza is a website that showcases the salon's services and portfolio. It is built using WordPress CMS, featuring a responsive design and SEO optimization.",
+          "category": "Website"
         }
       }
     },
@@ -129,8 +134,8 @@
     "hero": {
       "h1": "Welcome to",
       "h1_remark_word": "Odoo",
-      "h1_rest": "Services",
-      "p_description": "Transform your business with Odoo, the comprehensive business management software that covers all your needs. From CRM to accounting, inventory, online marketing, sales, purchases, manufacturing, human resources, and more. Discover how Odoo can drive your company's growth and efficiency.",
+      "h1_rest": "Business Solutions",
+      "p_description": "Boost your business with Odoo, the all-in-one business management software that meets every need.",
       "button_lets_talk": "Let's Talk"
     },
     "modules": {

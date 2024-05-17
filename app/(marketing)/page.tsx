@@ -8,12 +8,6 @@ import Testimonial from "@/app/(marketing)/_components/testimonials";
 import Team from "@/app/(marketing)/_components/team";
 import MaxWithWrapper from "@/components/max-with-wrapper";
 import {HeadingContactClean} from "@/app/(marketing)/_components/heading-contact-clean";
-import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
-import {Button} from "@/components/ui/button";
-import {whatsappURL} from "@/lib/utils";
-import {CornerDownRight, Dot, Send} from "lucide-react";
-import Link from "next/link";
-import Image from "next/image";
 import ScheduleCall from "@/app/(marketing)/_components/schedule-call";
 
 

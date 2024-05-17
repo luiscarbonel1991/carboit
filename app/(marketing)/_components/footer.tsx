@@ -7,8 +7,6 @@ import {Logo} from "@/app/(marketing)/_components/logo";
 
 const Footer = () => {
     return (
-
-
         <footer className="mt-20 p-4 bg-white shadow-inner sm:p-6 dark:bg-gray-800 rounded-t-lg">
             <div className="container mx-auto max-w-screen-xl">
                 <div className="md:flex md:justify-between">

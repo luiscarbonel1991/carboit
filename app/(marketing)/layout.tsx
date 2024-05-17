@@ -1,4 +1,3 @@
-import Footer from "./_components/footer"
 import Header from "./_components/header"
 import {i18n} from "@/i18n-config";
 

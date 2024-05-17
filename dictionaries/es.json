@@ -71,6 +71,11 @@
           "title": "D'Acosta Upholstery",
           "description": "D'Acosta Upholstery es un sitio web que muestra los servicios y el portafolio de la empresa. Está construido utilizando WordPress CMS, con un diseño responsivo y optimización SEO.",
           "category": "Website"
+        },
+        "luzsalonbelleza": {
+          "title": "Luz Salon Belleza",
+          "description": "Luz Salon Belleza es un sitio web que muestra los servicios y el portafolio del salón. Está construido utilizando WordPress CMS, con un diseño responsivo y optimización SEO.",
+          "category": "Sitio Web"
         }
       }
     },

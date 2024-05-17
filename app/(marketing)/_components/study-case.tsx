@@ -32,6 +32,15 @@ const caseStudies = [
         url: "https://dacostaupholstery.com",
         type: "Website",
         date: "2024-04-14"
+    },
+    {
+        id: "luzsalonbelleza",
+        title: "Luz Salón Belleza",
+        description: "Luz Salón  is a beauty salon that offers a range of services. The website was built using WordPress, featuring a user-friendly design and SEO optimization.",
+        image: "/static/images/study-case/luz-salon-1800x1800.webp",
+        url: "https://salondebellezaluz.com",
+        type: "Website",
+        date: "2024-05-01"
     }
 ]
 
@@ -70,8 +79,8 @@ export const StudyCase = ({
                         const caseStudyData = studyCaseDictData[caseStudy.id] || caseStudy
                         return (
                             <li key={index}
-                                className="rounded-3xl max-w-full md:max-w-lg shadow-md hover:shadow-2xl transition duration-300">
-                                <article className="flex flex-col">
+                                className="rounded-3xl max-w-full md:max-w-lg shadow-md hover:shadow-2xl transition duration-300 min-h-[300px]">
+                                <article className="flex flex-col min-h-[300px]">
                                     <Card className="rounded-3xl border-0 shadow-none hover:bg-zinc-100">
                                         <figure className="p-0">
                                             <Image src={caseStudy.image}

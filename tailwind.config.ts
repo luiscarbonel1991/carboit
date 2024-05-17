@@ -18,6 +18,10 @@ const config = {
             },
         },
         extend: {
+            backgroundImage: {
+                "oooscillate-pattern": "url('/static/images/patterns/oooscillate.svg')",
+                "ccchaos-pattern": "url('/static/images/patterns/ccchaos.svg')",
+            },
             colors: {
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
