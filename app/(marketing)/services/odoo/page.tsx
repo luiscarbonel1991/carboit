@@ -13,7 +13,7 @@ const ServicesPage = async () => {
     const dictionary = await getDictionary(lang)
 
     return (
-        <MaxWithWrapper className="grid grid-cols-1 space-y-28">
+        <MaxWithWrapper className="flex flex-col space-y-28">
             <Hero dictionary={dictionary.odoo}/>
             <OdooModules lang={lang} dictionary={dictionary.odoo}/>
         </MaxWithWrapper>

@@ -68,7 +68,7 @@ const odooResources = [
         image: pointOfSale
     },
     {
-        title: "Email Marketing",
+        title: "Marketing",
         alt: "Odoo Email Marketing",
         description: "Manage your email campaigns, track your leads, and optimize your marketing.",
         image: emailMarketing
@@ -150,7 +150,7 @@ export const Hero = ({dictionary}: HeroProps) => {
             <div className="py-6 md:block">
                 <Card className="bg-oooscillate-pattern bg-cover bg-center shadow-2xl">
                     <CardContent className="p-4">
-                        <div className="grid grid-cols-4 gap-8">
+                        <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
                             {
                                 odooResources.map((resource) => (
                                     <div className={"flex flex-col justify-center items-center"} key={resource.title}>
