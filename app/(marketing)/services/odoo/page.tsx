@@ -5,6 +5,7 @@ import {getSiteMetadata} from "@/lib/utils";
 import {odooKeywords} from "@/config/site-keywork";
 import {Hero} from "@/app/(marketing)/services/odoo/_components/hero";
 import OdooModules from "@/app/(marketing)/services/odoo/_components/service-sections";
+import MaxWithWrapper from "@/components/max-with-wrapper";
 
 
 const ServicesPage = async () => {
@@ -12,10 +13,10 @@ const ServicesPage = async () => {
     const dictionary = await getDictionary(lang)
 
     return (
-        <>
+        <MaxWithWrapper className="grid grid-cols-1 space-y-28">
             <Hero dictionary={dictionary.odoo}/>
             <OdooModules lang={lang} dictionary={dictionary.odoo}/>
-        </>
+        </MaxWithWrapper>
 
     )
 }
