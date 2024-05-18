@@ -140,7 +140,7 @@ export const ServicesSection = ({
                                 <CardService
                                     locale={lang}
                                     key={index}
-                                    cardClassName="shadow-md hover:shadow-lg hover:bg-zinc-100 transition duration-300 ease-in-out min-h-[490px] hover:scale-105"
+                                    cardClassName="shadow-md hover:shadow-lg hover:bg-zinc-100 transition duration-300 ease-in-out min-h-[300px] md:min-h-[490px] hover:scale-105"
                                     title={serviceDic.title}
                                     description={serviceDic.description}
                                     headerContent={service.image ? service.image : service.icon}
