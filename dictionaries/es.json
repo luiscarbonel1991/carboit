@@ -42,6 +42,14 @@
         "odoo": {
           "title": "Odoo",
           "description": "Odoo es un software de gestión empresarial que cubre todas tus necesidades. Desde CRM hasta contabilidad, inventario, marketing online, ventas, compras, manufactura, recursos humanos, y más."
+        },
+        "testing": {
+          "title": "Pruebas",
+          "description": "Nuestro equipo de pruebas garantiza que cada producto que entregamos sea de la más alta calidad. Realizamos pruebas de rendimiento, funcionales, de seguridad y de usabilidad para garantizar que tu producto sea perfecto."
+        },
+        "seoMarketing": {
+          "title": "SEO y Marketing Digital",
+          "description": "Ayudamos a las empresas a mejorar su presencia en línea a través de estrategias efectivas de marketing digital y SEO. Desde la optimización de motores de búsqueda hasta las campañas de marketing en redes sociales, nuestro objetivo es aumentar la visibilidad y atraer a la audiencia adecuada."
         }
       }
     },

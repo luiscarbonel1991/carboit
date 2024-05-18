@@ -3,6 +3,8 @@ import {Button} from "@/components/ui/button";
 import {ReactNode} from "react";
 import Link from "next/link";
 import {Locale} from "@/i18n-config";
+import {StaticImageData} from "next/image";
+import * as React from "react";
 
 interface CardServiceProps {
     locale: Locale

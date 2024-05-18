@@ -42,6 +42,14 @@
         "odoo": {
           "title": "Odoo Services",
           "description": "We are experts in Odoo, the comprehensive business management software that covers all your needs. From CRM to accounting, inventory, online marketing, sales, purchases, manufacturing, human resources, and more."
+        },
+        "testing": {
+          "title": "Testing",
+          "description": "We ensure that every product we deliver is of the highest quality. Our testing services are designed to identify and eliminate any issues before they impact your users."
+        },
+        "seoMarketing": {
+          "title": "SEO & Digital Marketing",
+          "description": "We help businesses improve their online presence through effective SEO and digital marketing strategies. From search engine optimization to social media marketing campaigns, our goal is to increase visibility and attract the right audience."
         }
       }
     },
