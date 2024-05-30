@@ -1,11 +1,11 @@
-import { Resend } from "resend";
-import {ContactFormVales} from "@/schemas";
+import { Resend } from "resend"
+import { ContactFormVales } from "@/schemas"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 const corporationEmail = process.env.RESEND_CORPORATION_EMAIL!
 
 const emailTemplate = (formData: ContactFormVales) => {
-    return `
+  return `
     <div style="font-family: 'Arial', sans-serif; color: #333;">
         <div style="text-align: center; background: linear-gradient(90deg, #80c6ff, #6c51f4);
         padding: 10px 0;">
@@ -30,13 +30,13 @@ const emailTemplate = (formData: ContactFormVales) => {
             <p style="margin-top: 40px; font-size: 0.9em; text-align: center;">© ${new Date().getFullYear()} Carboit. All rights reserved.</p>
         </div>
     </div>
-    `;
+    `
 }
 export const sendContactEmail = async (formData: ContactFormVales) => {
-    return await resend.emails.send({
-        from: "Carboit <mail@carboit.com>",
-        to: [formData.email, corporationEmail],
-        subject: formData.subject || "Re:contact form submission",
-        html: emailTemplate(formData)
-    })
+  return await resend.emails.send({
+    from: "Carboit <mail@carboit.com>",
+    to: [formData.email, corporationEmail],
+    subject: formData.subject || "Re:contact form submission",
+    html: emailTemplate(formData)
+  })
 }
