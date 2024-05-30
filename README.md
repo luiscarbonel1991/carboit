@@ -16,12 +16,14 @@
 </p>
 
 ## Key Features
+
 - SEO friendly.
 - Navbar with a responsive menu.
 - Hero section.
 - Contact form with validation.
 
 ## Dependencies
+
 - [Next.js](https://nextjs.org/learn)
 - [shadcn/ui](https://ui.shadcn.com/)
 - [package.json](package.json)
