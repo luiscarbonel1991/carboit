@@ -28,7 +28,8 @@ const odooResources = [
     title: "Sales",
     alt: "Odoo Sales",
     description: "Automate your sales processes, manage your sales team, and track your sales performance.",
-    image: sales
+    image: sales,
+    link: "#sales"
   },
   {
     title: "Accounting",
@@ -40,7 +41,8 @@ const odooResources = [
     title: "Inventory",
     alt: "Odoo Inventory",
     description: "Manage your inventory, track stock levels, and automate your supply chain.",
-    image: inventory
+    image: inventory,
+    link: "#inventory"
   },
   {
     title: "Manufacturing",
@@ -58,7 +60,8 @@ const odooResources = [
     title: "Purchase",
     alt: "Odoo Purchase",
     description: "Manage your purchases, track your suppliers, and optimize your procurement.",
-    image: purchase
+    image: purchase,
+    link: "#purchase"
   },
   {
     title: "Point of Sale",
@@ -135,7 +138,9 @@ export const Hero = ({ dictionary }: HeroProps) => {
                 <div className={"flex flex-col justify-center items-center"} key={resource.title}>
                   <Card className="w-20 hover:shadow-2xl hover:scale-105 transition duration-300">
                     <CardContent className="p-2">
-                      <Image quality={100} src={resource.image} alt={resource.alt} height={60} width={60} />
+                      <Link href={resource.link ? resource.link : ""}>
+                        <Image quality={100} src={resource.image} alt={resource.alt} height={60} width={60} />
+                      </Link>
                     </CardContent>
                   </Card>
                   <p className="text-center font-semibold">{resource.title}</p>

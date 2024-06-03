@@ -33,10 +33,11 @@ const OdooModules = ({ dictionary, lang }: OdooModulesProps) => {
         const odooModule = dictionary.modules[section.id]
         return (
           <div
+            id={`${section.id}`}
             key={`odoo-module-${section.id}`}
             className={cn(
               "py-8 px-4 mx-auto max-w-screen-xl md:grid md:grid-cols-2",
-              "rounded-3xl shadow-lg dark:bg-gray-800 dark:shadow-none"
+              "rounded-3xl shadow-lg dark:bg-gray-800 dark:shadow-none scroll-mt-20"
             )}
             dir={index % 2 == 0 ? "ltr" : "rtl"}
           >
