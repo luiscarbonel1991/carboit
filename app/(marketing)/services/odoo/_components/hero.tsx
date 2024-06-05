@@ -35,7 +35,8 @@ const odooResources = [
     title: "Accounting",
     alt: "Odoo Accounting",
     description: "Manage your accounting, invoicing, and expenses with ease.",
-    image: accounting
+    image: accounting,
+    link: "#accounting"
   },
   {
     title: "Inventory",
