@@ -22,7 +22,8 @@ const odooResources = [
     title: "CRM",
     alt: "Odoo CRM",
     description: "Manage your leads and customers, track sales, and automate your sales processes.",
-    image: crm
+    image: crm,
+    link: "#crm"
   },
   {
     title: "Sales",

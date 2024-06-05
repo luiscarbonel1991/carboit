@@ -10,8 +10,15 @@ const sections = [
     id: "accounting",
     title: "Accounting",
     description: `Odoo Accounting is a modern solution designed to simplify financial management. Its fast interface processes operations in under 90 milliseconds, and AI-powered invoice capture (98% accuracy) eliminates manual data entry. Automatic bank reconciliation with 28,000 banks and global compatibility make it versatile. It’s mobile-friendly, offers real-time reporting, and provides automated follow-ups for overdue payments via email, mail, or SMS.`,
-    button: "Let's Talk Sales",
+    button: "Let's Talk Accounting",
     image: "/static/images/marketing/odoo/accounting.png" // Image URL
+  },
+  {
+    id: "crm",
+    title: "CRM",
+    description: `Odoo CRM streamlines sales with a customer-focused approach. Manage leads efficiently, automate tasks, and track opportunities seamlessly. Stay organized with Kanban view, schedule follow-ups effortlessly, and communicate seamlessly via email, chat, SMS, and VoIP. Generate professional quotations in just a few clicks and make data-driven decisions with robust analytics. With AI lead scoring and automation, prioritize tasks effectively and maximize productivity. Odoo CRM is the ultimate tool for boosting sales performance and driving business growth.`,
+    button: "Let's Talk CRM",
+    image: "/static/images/marketing/odoo/crm.webp" // Image URL
   },
   {
     id: "sales",
