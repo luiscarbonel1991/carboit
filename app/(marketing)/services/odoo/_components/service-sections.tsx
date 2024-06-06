@@ -36,20 +36,52 @@ const sections = [
     image: "/static/images/marketing/odoo/inventory.webp" // Image URL
   },
   {
-    id: "sales",
-    title: "Sales",
+    id: "manufacturing",
+    title: "Manufacturing",
     description:
-      "Create clean, professional, and interactive quotes instantly with the incredible quote builder from Odoo. You can manage your sales orders and online store all in one platform.",
-    button: "Let's Talk Sales",
-    image: "/static/images/marketing/odoo/undraw_savings_re_eq4w.svg" // Image URL
+      "Odoo's Manufacturing module streamlines production processes with efficiency and control. Plan, schedule, and track production seamlessly. Utilize bill of materials, work orders, and routing to optimize workflows. Integrate inventory management for real-time tracking. Enjoy cost analysis, quality control, and automated reporting. With Odoo, achieve operational excellence and enhance manufacturing productivity.",
+    button: "Let's Talk Manufacturing",
+    image: "/static/images/marketing/odoo/manufacturing.webp" // Image URL
+  },
+  {
+    id: "emailMarketing",
+    title: "Marketing",
+    description:
+      "Odoo's Social Marketing module empowers businesses to enhance their online presence and engage with their audience effectively. Seamlessly manage social media accounts, schedule posts, and track performance metrics. Utilize advanced analytics to understand audience behavior and optimize marketing strategies. With Odoo, unlock the full potential of social media marketing to drive brand awareness and engagement.",
+    button: "Let's Talk Marketing",
+    image: "/static/images/marketing/odoo/social.gif" // Image URL
+  },
+  {
+    id: "pointOfSale",
+    title: "Point of Sale",
+    description:
+      "Odoo's Point of Sale (POS) module revolutionizes retail operations with intuitive and feature-rich functionality. Seamlessly manage sales, inventory, and customer data in real-time. Utilize customizable product catalogs, integrated payment solutions, and loyalty programs to enhance customer experience. Enjoy offline capabilities for uninterrupted service and robust reporting for informed decision-making. With Odoo POS, streamline transactions and elevate the retail experience for both customers and businesses.",
+    button: "Let's Talk Point of Sale",
+    image: "/static/images/marketing/odoo/point_of_sales.webp" // Image URL
+  },
+  {
+    id: "project",
+    title: "Project",
+    description:
+      "Odoo's Project module offers a comprehensive solution for efficient project management. Plan, organize, and track projects seamlessly with intuitive tools. Utilize Gantt charts, task lists, and milestone tracking for clear project visualization. Collaborate effectively with team members through shared documents and communication channels. Monitor progress, allocate resources, and manage budgets with ease. With Odoo Project, streamline project workflows and achieve successful outcomes.",
+    button: "Let's Talk Project",
+    image: "/static/images/marketing/odoo/project.webp" // Image URL
   },
   {
     id: "purchase",
     title: "Purchase",
     description:
-      "From quotation requests to receipts, from product variants to supplier invoices, let Odoo do all the work for you. Simplify your quotation requests and purchase orders, as well as create custom rules and replenishment methods.",
+      "Odoo's Project module offers a comprehensive solution for efficient project management. Plan, organize, and track projects seamlessly with intuitive tools. Utilize Gantt charts, task lists, and milestone tracking for clear project visualization. Collaborate effectively with team members through shared documents and communication channels. Monitor progress, allocate resources, and manage budgets with ease. With Odoo Project, streamline project workflows and achieve successful outcomes.",
     button: "Let's Talk Purchase",
-    image: "/static/images/marketing/odoo/undraw_business_shop_re_ruf4.svg" // Image URL
+    image: "/static/images/marketing/odoo/purchase.webp" // Image URL
+  },
+  {
+    id: "sales",
+    title: "Sales",
+    description:
+      "Odoo's Sales module revolutionizes the sales process, empowering businesses to drive revenue growth effectively. Track leads, manage opportunities, and forecast sales accurately with intuitive tools. Utilize customizable pipelines, automated communication, and integrated quotations for streamlined operations. Foster customer relationships with seamless communication channels and personalized interactions. Analyze sales metrics, monitor team performance, and make data-driven decisions for success. With Odoo Sales, optimize sales workflows and achieve business objectives efficiently.",
+    button: "Let's Talk Sales",
+    image: "/static/images/marketing/odoo/sales.webp" // Image URL
   }
 ]
 

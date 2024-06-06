@@ -50,13 +50,15 @@ const odooResources = [
     title: "Manufacturing",
     alt: "Odoo Manufacturing",
     description: "Manage your manufacturing processes, track production orders, and optimize your production.",
-    image: manufacturing
+    image: manufacturing,
+    link: "#manufacturing"
   },
   {
     title: "Project",
     alt: "Odoo Project",
     description: "Manage your projects, track tasks, and collaborate with your team.",
-    image: project
+    image: project,
+    link: "#project"
   },
   {
     title: "Purchase",
@@ -69,13 +71,15 @@ const odooResources = [
     title: "Point of Sale",
     alt: "Odoo Point of Sale",
     description: "Manage your sales, track your customers, and optimize your point of sale.",
-    image: pointOfSale
+    image: pointOfSale,
+    link: "#pointOfSale"
   },
   {
     title: "Marketing",
     alt: "Odoo Email Marketing",
     description: "Manage your email campaigns, track your leads, and optimize your marketing.",
-    image: emailMarketing
+    image: emailMarketing,
+    link: "#emailMarketing"
   },
   {
     title: "HR",
