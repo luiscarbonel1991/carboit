@@ -6,14 +6,16 @@ import { odooKeywords } from "@/config/site-keywork"
 import { Hero } from "@/app/(marketing)/services/odoo/_components/hero"
 import OdooModules from "@/app/(marketing)/services/odoo/_components/service-sections"
 import MaxWithWrapper from "@/components/max-with-wrapper"
+import OdooServices from "./_components/services"
 
 const ServicesPage = async () => {
   const lang = i18n.defaultLocale
   const dictionary = await getDictionary(lang)
 
   return (
-    <MaxWithWrapper className="flex flex-col space-y-28">
+    <MaxWithWrapper className="grid grid-cols-1 space-y-28">
       <Hero dictionary={dictionary.odoo} />
+      <OdooServices lang={lang} dictionary={dictionary.odoo} />
       <OdooModules lang={lang} dictionary={dictionary.odoo} />
     </MaxWithWrapper>
   )

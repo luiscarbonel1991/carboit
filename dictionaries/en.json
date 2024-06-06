@@ -163,6 +163,23 @@
         "button": "Let's Talk Inventory"
       }
     },
+    "services": {
+      "website": {
+        "title": "Custom Website Design & Development",
+        "description": "We create websites that represent your brand and captivate your audience. From eye-catching landing pages to user-friendly e-commerce platforms, we design online experiences that stand out and bring your vision to life. Our unique designs ensure your online presence is memorable and effective.",
+        "button": "Read more"
+      },
+      "development": {
+        "title": "Custom Software Development",
+        "description": "At Carboit, we understand the unique challenges businesses face today. We specialize in developing custom Odoo modules tailored to your business processes. We use our in-depth knowledge of the Odoo framework to design custom software that meets our clients' needs. We are committed to delivering your modules within agreed timelines.",
+        "button": "Let's Talk"
+      },
+      "training": {
+        "title": "Training and Support",
+        "description": "We provide continuous training, support, maintenance, and updates to ensure your software systems run smoothly and efficiently. Our team is dedicated to offering constant assistance and quick solutions to any issues. With our support, your business can operate without interruptions and with complete confidence.",
+        "button": "Let's Talk"
+      }
+    },
     "cookies": {
       "shortDescription": "We use cookies to ensure you get the best experience on our website.",
       "link": "learn more",

@@ -163,6 +163,23 @@
         "button": "Hablemos de Inventario"
       }
     },
+    "services": {
+      "website": {
+        "title": "Diseño y desarrollo de sitios web personalizados",
+        "description": "Creamos sitios web que representan tu marca y cautivan a tu audiencia. Desde llamativas páginas de destino hasta plataformas de comercio electrónico fáciles de usar, diseñamos experiencias en línea que destacan y materializan tu visión. Nuestros diseños únicos aseguran que tu presencia online sea inolvidable y efectiva.",
+        "button": "Leer más"
+      },
+      "development": {
+        "title": "Desarrollo de software personalizado",
+        "description": "En Carboit,  comprendemos los desafíos únicos que enfrentan las empresas hoy. Nos especializamos en desarrollar módulos personalizados de Odoo que se adaptan a tus procesos empresariales. Usamos nuestro profundo conocimiento del marco de Odoo para diseñar software a medida que satisface las necesidades de nuestros clientes. Nos comprometemos a entregar tus módulos en los plazos acordados.",
+        "button": "Hablemos"
+      },
+      "training": {
+        "title": "Capacitación y soporte",
+        "description": "Ofrecemos capacitación continua, soporte, mantenimiento y actualizaciones para asegurar que tus sistemas de software funcionen de manera eficiente y sin problemas. Nuestro equipo está dedicado a proporcionar asistencia constante y soluciones rápidas a cualquier problema. Con nuestro soporte, tu empresa podrá operar sin interrupciones y con total confianza.",
+        "button": "Hablemos"
+      }
+    },
     "cookies": {
       "shortDescription": "Usamos cookies para mejorar tu experiencia en nuestro sitio web.",
       "link": "leer más",

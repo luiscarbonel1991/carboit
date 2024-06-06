@@ -22,61 +22,71 @@ const odooResources = [
     title: "CRM",
     alt: "Odoo CRM",
     description: "Manage your leads and customers, track sales, and automate your sales processes.",
-    image: crm
+    image: crm,
+    link: "#crm"
   },
   {
     title: "Sales",
     alt: "Odoo Sales",
     description: "Automate your sales processes, manage your sales team, and track your sales performance.",
-    image: sales
+    image: sales,
+    link: "#sales"
   },
   {
     title: "Accounting",
     alt: "Odoo Accounting",
     description: "Manage your accounting, invoicing, and expenses with ease.",
-    image: accounting
+    image: accounting,
+    link: "#accounting"
   },
   {
     title: "Inventory",
     alt: "Odoo Inventory",
     description: "Manage your inventory, track stock levels, and automate your supply chain.",
-    image: inventory
+    image: inventory,
+    link: "#inventory"
   },
   {
     title: "Manufacturing",
     alt: "Odoo Manufacturing",
     description: "Manage your manufacturing processes, track production orders, and optimize your production.",
-    image: manufacturing
+    image: manufacturing,
+    link: "#manufacturing"
   },
   {
     title: "Project",
     alt: "Odoo Project",
     description: "Manage your projects, track tasks, and collaborate with your team.",
-    image: project
+    image: project,
+    link: "#project"
   },
   {
     title: "Purchase",
     alt: "Odoo Purchase",
     description: "Manage your purchases, track your suppliers, and optimize your procurement.",
-    image: purchase
+    image: purchase,
+    link: "#purchase"
   },
   {
     title: "Point of Sale",
     alt: "Odoo Point of Sale",
     description: "Manage your sales, track your customers, and optimize your point of sale.",
-    image: pointOfSale
+    image: pointOfSale,
+    link: "#pointOfSale"
   },
   {
     title: "Marketing",
     alt: "Odoo Email Marketing",
     description: "Manage your email campaigns, track your leads, and optimize your marketing.",
-    image: emailMarketing
+    image: emailMarketing,
+    link: "#emailMarketing"
   },
   {
     title: "HR",
     alt: "Odoo HR",
     description: "Manage your employees, track your attendance, and optimize your human resources.",
-    image: hr
+    image: hr,
+    link: "#hr"
   }
 ].sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase()))
 
@@ -135,7 +145,9 @@ export const Hero = ({ dictionary }: HeroProps) => {
                 <div className={"flex flex-col justify-center items-center"} key={resource.title}>
                   <Card className="w-20 hover:shadow-2xl hover:scale-105 transition duration-300">
                     <CardContent className="p-2">
-                      <Image quality={100} src={resource.image} alt={resource.alt} height={60} width={60} />
+                      <Link href={resource.link ? resource.link : ""}>
+                        <Image quality={100} src={resource.image} alt={resource.alt} height={60} width={60} />
+                      </Link>
                     </CardContent>
                   </Card>
                   <p className="text-center font-semibold">{resource.title}</p>
