@@ -21,6 +21,13 @@ const sections = [
     image: "/static/images/marketing/odoo/crm.webp" // Image URL
   },
   {
+    id: "hr",
+    title: "HR",
+    description: `Odoo's HR module centralizes employee management, offering a suite of features beyond a mere directory. Organize your workforce efficiently, categorizing by hours, job titles, and contract statuses. Safeguard private data with restricted access settings. Identify skillsets easily for tailored task assignments. Manage PTO seamlessly with integrated tracking and streamline document management securely. Conduct performance appraisals, oversee recruitment, facilitate onboarding, and monitor attendance effortlessly. With Odoo, empower your HR operations for optimal workforce management and growth.`,
+    button: "Let's Talk HR",
+    image: "/static/images/marketing/odoo/hr.webp" // Image URL
+  },
+  {
     id: "sales",
     title: "Sales",
     description:

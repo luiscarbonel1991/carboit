@@ -81,7 +81,8 @@ const odooResources = [
     title: "HR",
     alt: "Odoo HR",
     description: "Manage your employees, track your attendance, and optimize your human resources.",
-    image: hr
+    image: hr,
+    link: "#hr"
   }
 ].sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase()))
 
