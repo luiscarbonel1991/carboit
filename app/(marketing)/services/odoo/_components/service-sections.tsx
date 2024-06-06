@@ -28,20 +28,20 @@ const sections = [
     image: "/static/images/marketing/odoo/hr.webp" // Image URL
   },
   {
+    id: "inventory",
+    title: "Inventory",
+    description:
+      "Odoo's Inventory module offers real-time stock management with smart replenishment strategies, streamlined receipt, quality control, and storage processes. Enjoy offline functionality, optimize warehouse activities, integrate with carriers, and ensure robust inventory valuation methods, maximizing productivity and efficiency.",
+    button: "Let's Talk Inventory",
+    image: "/static/images/marketing/odoo/inventory.webp" // Image URL
+  },
+  {
     id: "sales",
     title: "Sales",
     description:
       "Create clean, professional, and interactive quotes instantly with the incredible quote builder from Odoo. You can manage your sales orders and online store all in one platform.",
     button: "Let's Talk Sales",
     image: "/static/images/marketing/odoo/undraw_savings_re_eq4w.svg" // Image URL
-  },
-  {
-    id: "inventory",
-    title: "Inventory",
-    description:
-      "Manage your inventory in real-time with various features such as serial numbers, lots, packaging, storage strategies, and manage incoming and outgoing shipments.",
-    button: "Let's Talk Inventory",
-    image: "/static/images/marketing/odoo/undraw_web_shopping_re_owap.svg" // Image URL
   },
   {
     id: "purchase",
